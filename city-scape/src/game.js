@@ -23,17 +23,17 @@ const config = {
   let showDebug = false;
   
   function preload() {
-    this.load.image("tiles", "http://localhost/game-new/asset/tuxmon-sample-32px-extruded.png");
-    this.load.tilemapTiledJSON("map", "http://localhost/game-new/asset/tuxemon-town.json");
+    this.load.image("tiles", "asset/tuxmon-sample-32px-extruded.png");
+    this.load.tilemapTiledJSON("map", "asset/tuxemon-town.json");
     //this.load.image("atlas", "http://localhost/game-new/asset/Boy-skateboard.png");
 
-    this.load.spritesheet("atlas", "http://localhost/game-new/asset/player-new.png",{ frameWidth: 45, frameHeight: 90 });
+    this.load.spritesheet("atlas", "asset/player-new.png",{ frameWidth: 45, frameHeight: 90 });
 
-    this.load.spritesheet("atlas-left", "http://localhost/game-new/asset/player/left.png",{ frameWidth: 45, frameHeight: 90 });
-    this.load.spritesheet("atlas-right", "http://localhost/game-new/asset/player/right.png",{ frameWidth: 40, frameHeight: 85 });
-    this.load.spritesheet("atlas-up", "http://localhost/game-new/asset/player/up.png",{ frameWidth: 37, frameHeight: 90 });
-    this.load.spritesheet("atlas-down", "http://localhost/game-new/asset/player/down.png",{ frameWidth: 43, frameHeight: 90 });
-    this.load.spritesheet("atlas-open", "http://localhost/game-new/asset/player/open.png",{ frameWidth: 43, frameHeight: 93 });
+    this.load.spritesheet("atlas-left", "asset/player/left.png",{ frameWidth: 45, frameHeight: 90 });
+    this.load.spritesheet("atlas-right", "asset/player/right.png",{ frameWidth: 40, frameHeight: 85 });
+    this.load.spritesheet("atlas-up", "asset/player/up.png",{ frameWidth: 37, frameHeight: 90 });
+    this.load.spritesheet("atlas-down", "asset/player/down.png",{ frameWidth: 43, frameHeight: 90 });
+    this.load.spritesheet("atlas-open", "asset/player/open.png",{ frameWidth: 43, frameHeight: 93 });
     
     // An atlas is a way to pack multiple images together into one texture. I'm using it to load all
     // the player animations (walking left, walking right, etc.) in one image. For more info see:
