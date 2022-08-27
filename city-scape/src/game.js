@@ -23,16 +23,17 @@ const config = {
   let showDebug = false;
   
   function preload() {
-    this.load.image("tiles", "asset/tuxmon-sample-32px-extruded.png");
-    this.load.tilemapTiledJSON("map", "asset/tuxemon-town.json");
-    //this.load.image("atlas", " asset/Boy-skateboard.png");
+    this.load.image("tiles", "http://localhost/game-new/asset/tuxmon-sample-32px-extruded.png");
+    this.load.tilemapTiledJSON("map", "http://localhost/game-new/asset/tuxemon-town.json");
+    //this.load.image("atlas", "http://localhost/game-new/asset/Boy-skateboard.png");
 
-    this.load.spritesheet("atlas", "asset/player-new.png",{ frameWidth: 45, frameHeight: 90 });
+    this.load.spritesheet("atlas", "http://localhost/game-new/asset/player-new.png",{ frameWidth: 45, frameHeight: 90 });
 
-    this.load.spritesheet("atlas-left", "asset/player/left.png",{ frameWidth: 45, frameHeight: 90 });
-    this.load.spritesheet("atlas-right", "asset/player/right.png",{ frameWidth: 40, frameHeight: 85 });
-    this.load.spritesheet("atlas-up", "asset/player/up.png",{ frameWidth: 37, frameHeight: 90 });
-    this.load.spritesheet("atlas-down", "asset/player/down.png",{ frameWidth: 43, frameHeight: 90 });
+    this.load.spritesheet("atlas-left", "http://localhost/game-new/asset/player/left.png",{ frameWidth: 45, frameHeight: 90 });
+    this.load.spritesheet("atlas-right", "http://localhost/game-new/asset/player/right.png",{ frameWidth: 40, frameHeight: 85 });
+    this.load.spritesheet("atlas-up", "http://localhost/game-new/asset/player/up.png",{ frameWidth: 37, frameHeight: 90 });
+    this.load.spritesheet("atlas-down", "http://localhost/game-new/asset/player/down.png",{ frameWidth: 43, frameHeight: 90 });
+    this.load.spritesheet("atlas-open", "http://localhost/game-new/asset/player/open.png",{ frameWidth: 43, frameHeight: 93 });
     
     // An atlas is a way to pack multiple images together into one texture. I'm using it to load all
     // the player animations (walking left, walking right, etc.) in one image. For more info see:
@@ -110,6 +111,12 @@ const config = {
         frameRate: 10,
         repeat: -1
     });
+    this.anims.create({
+      key: 'open',
+      frames: this.anims.generateFrameNumbers('atlas-open', { start: 3, end: 6 }),
+      frameRate: 10,
+      repeat: -1
+  });
 
       
     // .sprite(spawnPoint.x, spawnPoint.y, "atlas", "misa-front")
@@ -204,7 +211,13 @@ const config = {
   
     // Stop any previous movement from the last frame
     player.body.setVelocity(0);
-  
+
+
+
+   // Phaser.Input.Keyboard.KeyCodes.SPACE
+
+  //  var spaceKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
+
     // Horizontal movement
     if (cursors.left.isDown) {
       this.physics.velocityFromAngle(-30, -300, player.body.velocity);
@@ -221,16 +234,25 @@ const config = {
       this.physics.velocityFromAngle(30, -300, player.body.velocity);
       player.anims.play('up', true);
       // player.body.setVelocityY(-speed);
-    } else if (cursors.down.isDown) {
+    }
+    else if (cursors.down.isDown){
       this.physics.velocityFromAngle(30, 300, player.body.velocity);
       player.anims.play('down', true);
       // player.body.setVelocityY(speed);
     }
+   
+    else if ((this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE)).isDown){
+      // this.physics.velocityFromAngle(30, 300, player.body.velocity);
+      player.anims.play('open', true);
+      // player.body.setVelocityY(speed);
+    }
+  
     else{
         // player.anims.stopOnFrame(true);
 
         player.anims.stop(null,true);
     }
+     
   
     // Normalize and scale the velocity so that player can't move faster along a diagonal
     player.body.velocity.normalize().scale(speed);
