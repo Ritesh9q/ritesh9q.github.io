@@ -23,36 +23,38 @@ const config = {
   let showDebug = false;
   
   function preload() {
-    this.load.image("tiles", "asset/tuxmon-sample-32px-extruded.png");
-    this.load.tilemapTiledJSON("map", "asset/tuxemon-town.json");
-    //this.load.image("atlas", "http://localhost/game-new/asset/Boy-skateboard.png");
+    this.load.image("tiles", " asset/tuxmon-sample-32px-extruded.png");
+    this.load.image("box", " asset/box.png");
+    this.load.tilemapTiledJSON("map", " asset/tuxemon-town.json");
+    //this.load.image("atlas", " asset/Boy-skateboard.png");
 
-    this.load.spritesheet("atlas", "asset/player-new.png",{ frameWidth: 45, frameHeight: 90 });
+    this.load.spritesheet("atlas", " asset/player-new.png",{ frameWidth: 45, frameHeight: 90 });
 
-    this.load.spritesheet("atlas-left", "asset/player/left.png",{ frameWidth: 45, frameHeight: 90 });
-    this.load.spritesheet("atlas-right", "asset/player/right.png",{ frameWidth: 40, frameHeight: 85 });
-    this.load.spritesheet("atlas-up", "asset/player/up.png",{ frameWidth: 37, frameHeight: 90 });
-    this.load.spritesheet("atlas-down", "asset/player/down.png",{ frameWidth: 43, frameHeight: 90 });
-    this.load.spritesheet("atlas-open", "asset/player/open.png",{ frameWidth: 43, frameHeight: 93 });
+    this.load.spritesheet("atlas-left", " asset/player/left.png",{ frameWidth: 45, frameHeight: 90 });
+    this.load.spritesheet("atlas-right", " asset/player/right.png",{ frameWidth: 40, frameHeight: 85 });
+    this.load.spritesheet("atlas-up", " asset/player/up.png",{ frameWidth: 37, frameHeight: 90 });
+    this.load.spritesheet("atlas-down", " asset/player/down.png",{ frameWidth: 43, frameHeight: 90 });
+    this.load.spritesheet("atlas-open", " asset/player/open.png",{ frameWidth: 43, frameHeight: 93 });
     
-    // An atlas is a way to pack multiple images together into one texture. I'm using it to load all
-    // the player animations (walking left, walking right, etc.) in one image. For more info see:
-    //  https://labs.phaser.io/view.html?src=src/animation/texture%20atlas%20animation.js
-    // If you don't use an atlas, you can do the same thing with a spritesheet, see:
-    //  https://labs.phaser.io/view.html?src=src/animation/single%20sprite%20sheet.js
-  
-    // this.load.atlas(
-    //   "atlas",
-    //   "https://mikewesthad.github.io/phaser-3-tilemap-blog-posts/post-1/assets/atlas/atlas.png",
-    //   "https://mikewesthad.github.io/phaser-3-tilemap-blog-posts/post-1/assets/atlas/atlas.json"
-    // );
+    // this.load.scenePlugin('rexgesturesplugin', 'https://raw.githubusercontent.com/rexrainbow/phaser3-rex-notes/master/dist/rexgesturesplugin.min.js', 'rexGestures', 'rexGestures');
+
+
+
+    this.load.scenePlugin({
+        key: 'rexgesturesplugin',
+        url: 'https://raw.githubusercontent.com/rexrainbow/phaser3-rex-notes/master/dist/rexgesturesplugin.min.js',
+        sceneKey: 'rexGestures'
+    });   
+
+    
+    
+    
   }
   
   function create() {
     const map = this.make.tilemap({ key: "map" });
-  
-    // Parameters are the name you gave the tileset in Tiled and then the key of the tileset image in
-    // Phaser's cache (i.e. the name you used in preload)
+   
+    
     const tileset = map.addTilesetImage("tuxmon-sample-32px-extruded", "tiles");
   
     // Parameters: layer name (or index) from Tiled, tileset, x, y
@@ -201,6 +203,10 @@ const config = {
         faceColor: new Phaser.Display.Color(40, 39, 37, 255), // Color of colliding face edges
       });
     });
+
+
+
+
   }
   
   function update(time, delta) {
@@ -212,7 +218,17 @@ const config = {
     // Stop any previous movement from the last frame
     player.body.setVelocity(0);
 
+    this.input.mouse.disableContextMenu();
 
+    this.input.on('pointerdown', function (pointer) {
+
+        if (pointer.rightButtonDown())
+        {
+          player.anims.play('open', true);
+        }
+       
+
+    }, this); 
 
    // Phaser.Input.Keyboard.KeyCodes.SPACE
 
@@ -235,7 +251,7 @@ const config = {
       player.anims.play('up', true);
       // player.body.setVelocityY(-speed);
     }
-    else if (cursors.down.isDown){
+    else if (cursors.down.isDown ){
       this.physics.velocityFromAngle(30, 300, player.body.velocity);
       player.anims.play('down', true);
       // player.body.setVelocityY(speed);
@@ -257,6 +273,7 @@ const config = {
     // Normalize and scale the velocity so that player can't move faster along a diagonal
     player.body.velocity.normalize().scale(speed);
   
+
 
   }
   
