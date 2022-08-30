@@ -289,8 +289,14 @@ const config = {
   //  var spaceKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
 
     // Horizontal movement
+      
+      if(this.input.pointer1.isDown){
+      this.physics.velocityFromAngle(-30, 300, player.body.velocity);
+      player.anims.play('right', true);
+          
+      }
 
-    if(this.swipeInput.up && this.input.pointer1.isDown){
+    if(this.swipeInput.up ){
  
 
       console.log('somethng something...');
