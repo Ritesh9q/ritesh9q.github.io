@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+    <title>Swipe Demo</title>
+    <style>
+       html, body {
+        height: 100%;
+        }
+
+        body {
+        margin: 0;
+        padding: 0;
+        background: #222;
+        color: #eee;
+        font: caption;
+        }
+    </style>
+    <script>
+    
+    class Demo extends Phaser.Scene {
+    constructor() {
+        super({
+            key: 'examples'
+        })
+    }
+
+    preload() { 
+        this.load.scenePlugin({
+            key: 'rexgesturesplugin',
+            url: 'https://raw.githubusercontent.com/rexrainbow/phaser3-rex-notes/master/dist/rexgesturesplugin.min.js',
+            sceneKey: 'rexGestures'
+        });      
+    }
+
+    create() {
+        this.print = print = this.add.text(0, 0, '')
+
+        this.swipeInput = this.rexGestures.add.swipe({ velocityThreshold: 1000 })
+            .on('swipe', function (swipe) {
+                print.text += `swipe, v = ${swipe.dragVelocity}\n`;
+            }, this);
+    }
+
+    update() {
+        if (this.swipeInput.isSwiped) {
+            this.print.text += `update(): swipe ${dumpDirectionStates(this.swipeInput)}\n`;
+        }
+    }
+}
+
+var directions = ['left', 'right', 'up', 'down'];
+var dumpDirectionStates = function (swipe) {
+    var s = '';
+    var dir;
+    for (var i = 0, cnt = directions.length; i < cnt; i++) {
+        dir = directions[i];
+        if (swipe[dir]) {
+            s += ' ' + dir;
+        }
+    }
+    return s;
+}
+
+var config = {
+    type: Phaser.AUTO,
+    width: 800,
+    height: 600,
+    scale: {
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH,
+    },
+    scene: Demo
+};
+
+var game = new Phaser.Game(config);
+    </script>
+</head>
+<body>
+    <footer><div id=phaser-example></div></footer>
+</body>
+</html>
