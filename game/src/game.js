@@ -26,7 +26,7 @@ const config = {
   var button;
   var leftButton;
   var myButton
-
+  var circle
 
   
   function preload() {
@@ -48,6 +48,8 @@ const config = {
 
     this.load.image("left-button", "images/Left-Bottom.png");
 
+    this.load.image("circle", "images/Circle.png");  
+
     // this.load.image("button", "images/Circle.png");
       
 
@@ -63,7 +65,10 @@ const config = {
   
     // var t = game.add.text(0, 0, "this text is fixed to the camera", { font: "32px Arial", fill: "#ffffff", align: "center" });
     
-    
+    // this.add.image(40, 30, 'circle');
+
+    //  A sprite, doesn't scroll with the camera (is fixed to camera)
+  
 
 
 
@@ -102,20 +107,28 @@ const config = {
     );
 
 
+  //  circle = this.add.sprite(spawnPoint.x, spawnPoint.y, "circle");
+  //  circle.fixedToCamera= true;
+   
+
   
     // Create a sprite with physics enabled via the physics system. The image used for the sprite has
     // a bit of whitespace, so I'm using setSize & setOffset to control the size of the player's body.
     player = this.physics.add
       .sprite(spawnPoint.x, spawnPoint.y, "atlas")
-      .setSize(30, 40)
+      .setSize(30, 40) 
       .setOffset(0, 24);
 
-      button = this.physics.add
-      .sprite(spawnPoint1.x, spawnPoint1.y, "button")
-      .setSize(50, 90)
-      .setOffset(0, 24)
+    button = this.physics.add
+    .sprite(spawnPoint1.x, spawnPoint1.y, "circle")
+    .setSize(50, 90)
+    .setOffset(0, 24)
 
       // button = document.getElementById("up");
+
+      // this.add.dom(button);
+
+      // this.physics.add.existing(button, false);
   
 
       //  myButton = this.add.dom(button);
@@ -178,57 +191,11 @@ const config = {
   });
 
       
-    // .sprite(spawnPoint.x, spawnPoint.y, "atlas", "misa-front")
-    // Watch the player and worldLayer for collisions, for the duration of the scene:
+    
     this.physics.add.collider(player, worldLayer);
+
+    this.physics.add.collider(button, worldLayer);
   
-    // Create the player's walking animations from the texture atlas. These are stored in the global
-    // animation manager so any sprite can access them.
-    // const anims = this.anims;
-    // anims.create({
-    //   key: "misa-left-walk",
-    //   frames: anims.generateFrameNames("atlas", {
-    //     prefix: "misa-left-walk.",
-    //     start: 0,
-    //     end: 3,
-    //     zeroPad: 3,
-    //   }),
-    //   frameRate: 10,
-    //   repeat: -1,
-    // });
-    // anims.create({
-    //   key: "misa-right-walk",
-    //   frames: anims.generateFrameNames("atlas", {
-    //     prefix: "misa-right-walk.",
-    //     start: 0,
-    //     end: 3,
-    //     zeroPad: 3,
-    //   }),
-    //   frameRate: 10,
-    //   repeat: -1,
-    // });
-    // anims.create({
-    //   key: "misa-front-walk",
-    //   frames: anims.generateFrameNames("atlas", {
-    //     prefix: "misa-front-walk.",
-    //     start: 0,
-    //     end: 3,
-    //     zeroPad: 3,
-    //   }),
-    //   frameRate: 10,
-    //   repeat: -1,
-    // });
-    // anims.create({
-    //   key: "misa-back-walk",
-    //   frames: anims.generateFrameNames("atlas", {
-    //     prefix: "misa-back-walk.",
-    //     start: 0,
-    //     end: 3,
-    //     zeroPad: 3,
-    //   }),
-    //   frameRate: 10,
-    //   repeat: -1,
-    // });
   
     const camera = this.cameras.main;
     camera.startFollow(player);
@@ -236,7 +203,7 @@ const config = {
   
     cursors = this.input.keyboard.createCursorKeys();
   
-    // Help text that has a "fixed" position on the screen
+    
     this.add
       .text(16, 16, "", {
         font: "18px monospace",
@@ -263,52 +230,11 @@ const config = {
 
 
 
-    
-    // box.setInteractive();
-
-  
-
-    // this.joyStick = this.plugins.get('rexvirtualjoystickplugin').add(this, {
-    //   x: 400,
-    //   y: 300,
-    //   radius: 100,
-    //   base: this.add.circle(0, 0, 100, 0x888888),
-    //   thumb: this.add.circle(0, 0, 50, 0xcccccc),
-    //   // dir: '8dir',   // 'up&down'|0|'left&right'|1|'4dir'|2|'8dir'|3
-    //   // forceMin: 16,
-    //   // enable: true
-    //       })
-    //       .on('update', dumpJoyStickState, this);
-
-    //     this.text = this.add.text(0, 0);
-    //     dumpJoyStickState();
-    //     }
-
-    //     function dumpJoyStickState() {
-    //     var cursorKeys = this.joyStick.createCursorKeys();
-    //     var s = 'Key down: ';
-    //     for (var name in cursorKeys) {
-    //       if (cursorKeys[name].isDown) {
-    //           s += `${name} `;
-    //       }
-    //     }
-
-    //     s += `
-    //     Force: ${Math.floor(this.joyStick.force * 100) / 100}
-    //     Angle: ${Math.floor(this.joyStick.angle * 100) / 100}
-    //     `;
-
-    //     s += '\nTimestamp:\n';
-    //     for (var name in cursorKeys) {
-    //       var key = cursorKeys[name];
-    //       s += `${name}: duration=${key.duration / 1000}\n`;
-    //     }
-    //     this.text.setText(s);
-    //     
+   
             
 
 
-    myButton = this.add.dom(button);
+    
   }
     
 
