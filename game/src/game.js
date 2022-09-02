@@ -89,22 +89,22 @@ const config = {
   function create() {
 
    controller_bg =  this.add.image(1200, 570, 'controller-bg').setScrollFactor(0);
-
+  
    controller_bg.setDepth(100);
 
     leftButton =  this.add.sprite(1120, 610, 'left-button').setScrollFactor(0);
-
+  
    leftButton.setDepth(101)
-
     rightButton =  this.add.sprite(1280, 520, 'right-button').setScrollFactor(0);
+
    rightButton.setDepth(101)
 
     upButton =  this.add.sprite(1130, 520, 'up-button').setScrollFactor(0);
-  
+ 
    upButton.setDepth(101)
 
-   downButton =  this.add.sprite(1270, 620, 'down-button').setScrollFactor(0);
-  
+    downButton =  this.add.sprite(1270, 620, 'down-button').setScrollFactor(0);
+ 
    downButton.setDepth(101)
 
   
