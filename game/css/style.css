@@ -1,0 +1,151 @@
+/* Put your css in here */
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+
+
+.application
+{
+    height: 1080px;
+    width: 1920px;
+    /*margin: 0 auto;*/
+    overflow: hidden;
+    background: #000000;
+    position: relative;
+}
+body
+{
+    background: #000;
+    font-family: Arial;
+    color: #fff;
+    overflow: hidden;
+	position: fixed;
+	margin: auto;
+	left: 0;
+	right: 0;
+}
+
+.no-text-selection {
+  -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none; 
+}
+
+.cityScape{
+	background:url('../images/Cityscape.jpg') no-repeat;
+	width:2849px;
+	height:1515px;
+	position:absolute;
+	top: -670px;
+    left: -1030px;
+	/*transition: all 1s;
+	width:1920px;
+	height:1080px;*/
+}
+.char{
+	background:url('../images/Boy-skateboard.png');
+	width:70px;
+	height:104px;
+	position:absolute;
+	top: 40%;
+    left: 50%;
+	
+}
+.btn{
+	cursor:pointer;
+}
+#navBase{
+	background:url('../images/Circle.png');
+	position:absolute;
+	bottom:0;
+	right:0;
+	width:519px;
+	height:379px;
+}
+#up{
+	background:url('../images/Left-Top.png') no-repeat;
+	position:absolute;
+	top: 246px;
+    right: 185px;
+	width:20px;
+	height:12px;
+}
+#up.selected{
+	background:url('../images/Left-Top-Hover.png') no-repeat;
+	width:28px;
+	height:20px;
+}
+#right{
+	background:url('../images/Right-Top.png') no-repeat;
+	position:absolute;
+	top: 252px;
+    right: 58px;
+	width:20px;
+	height:12px;
+}
+#right.selected{
+	background:url('../images/Right-Top-Hover.png') no-repeat;
+	width:28px;
+	height:19px;
+}
+
+#down{
+	background:url('../images/Right-Bottom.png') no-repeat;
+	position:absolute;
+	top: 313px;
+    right: 57px;
+	width:20px;
+	height:12px;
+}
+#down.selected{
+	background:url('../images/Right-Bottom_hover.png') no-repeat;
+	width:27px;
+	height:20px;
+}
+#left{
+	background:url('../images/Left-Bottom.png') no-repeat;
+	position:absolute;
+	top: 312px;
+    right: 194px;
+	width:20px;
+	height:12px;
+}
+#left.selected{
+	background:url('../images/Left-Bottom-Hover.png') no-repeat;
+	width:27px;
+	height:19px;
+}
+#stop{
+	background: none;
+    position: absolute;
+    top: 270px;
+    right: 116px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.blockArea{
+	background:rgba(255,0,0,.3);
+	width:50px;
+	height:50px;
+}
+#charBlock{
+	width: 40px;
+    height: 80px;
+    position: absolute;
+    top: 10px;
+    left: 16px;
+}
+#block1 {
+    position: absolute;
+    top: 2350px;
+    left: 4136px;
+    width: 200px;
+}
