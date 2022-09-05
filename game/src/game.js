@@ -21,15 +21,9 @@ const config = {
   let cursors;
   let player;
   let showDebug = false;
-  var isClicking = false;
-  var swipeDirection;
-  var button;
-
-  var myButton
-  var circle
-  var box;
   let boxes;
   let boxLayer;
+  let  scoreText
 
   //controllers keys
 
@@ -41,13 +35,14 @@ const config = {
 
   
   function preload() {
-    this.load.image("tiles", " asset/tuxmon-sample-32px-extruded.png");
-    this.load.image("box", " asset/box.png");
-    this.load.tilemapTiledJSON("map", " asset/tuxemon-town.json");
-    
-//this.load.image("atlas", " asset/Boy-skateboard.png");
-    this.load.spritesheet("atlas", " asset/player-new.png",{ frameWidth: 45, frameHeight: 90 });
 
+    //background image
+    this.load.image("tiles", " asset/tuxmon-sample-32px-extruded.png");
+    this.load.tilemapTiledJSON("map", " asset/tuxemon-town.json");
+
+    
+    //player and movement images
+    this.load.spritesheet("atlas", " asset/player-new.png",{ frameWidth: 45, frameHeight: 90 });
     this.load.spritesheet("atlas-left", " asset/player/left.png",{ frameWidth: 45, frameHeight: 90 });
     this.load.spritesheet("atlas-right", " asset/player/right.png",{ frameWidth: 40, frameHeight: 85 });
     this.load.spritesheet("atlas-up", " asset/player/up.png",{ frameWidth: 37, frameHeight: 90 });
@@ -58,50 +53,26 @@ const config = {
     //controllers images
 
     this.load.image("controller-bg", "asset/controller/controller_bg.png");
-    this.load.spritesheet("up-button", "asset/controller/up.png",{ frameWidth: 43, frameHeight: 93 });
-    this.load.spritesheet("left-button", "asset/controller/left.png", { frameWidth: 43, frameHeight: 93 });
+    this.load.image("up-button", "asset/controller/up.png",{ frameWidth: 43, frameHeight: 93 });
+    this.load.image("left-button", "asset/controller/left.png", { frameWidth: 43, frameHeight: 93 });
     this.load.image("right-button", "asset/controller/right.png");
     this.load.image("down-button", "asset/controller/down.png");
-  
-
-
-
-
-    // this.load.image("box", "asset/box.png");
-
-    this.load.spritesheet('box', 'asset/box.png', { frameWidth: 20, frameHeight: 20 });
-
-    this.load.image("left-button", "images/Left-Bottom.png");
-
-    this.load.image("circle", "images/Circle.png");  
-
-    // this.load.image("button", "images/Circle.png");
+    
+    //box image
+    this.load.image('box', 'asset/box.png', { frameWidth: 20, frameHeight: 20 });
       
-
- 
 
    
   }
+
+
   
   function create() {
 
-  //  controller_bg =  this.add.image(1200, 570, 'controller-bg').setScrollFactor(0);
-  //  controller_bg.setDepth(100);
-  //  controller_bg.setOrigin(1);
-
-  // leftButton =  this.add.sprite(1120, 610, 'left-button').setScrollFactor(0);
-  // leftButton.setDepth(101)
-
-  // rightButton =  this.add.sprite(1280, 520, 'right-button').setScrollFactor(0);
-  // rightButton.setDepth(101)
-
-  // upButton =  this.add.sprite(1130, 520, 'up-button').setScrollFactor(0);
-  // upButton.setDepth(101)
-
-  // downButton =  this.add.sprite(1270, 620, 'down-button').setScrollFactor(0);
-  // downButton.setDepth(101)
 
 
+
+   //controller images
    controller_bg =  this.add.image(190, 550, 'controller-bg').setScrollFactor(0);
    controller_bg.setDepth(100);
    
@@ -135,7 +106,6 @@ const config = {
 
   
     worldLayer.setCollisionByProperty({ collides: true });
-  
    
     aboveLayer.setDepth(10);
   
@@ -146,16 +116,19 @@ const config = {
       (obj) => obj.name === "Spawn Point"
     );
 
+    boxes = this.physics.add.group();
+    boxes.enableBody = true;
+    boxes.physicsBodyType = Phaser.Physics.ARCADE;
 
-
-
+    //position boxes dynamically with JSON
     boxes = map.createFromObjects('Objects', { gid: 26, key: 'box' });
 
+    // boxes = this.physics.add.group();
+  
+    console.log(boxes[0]);
     
 
-
- 
-  
+   
     // Create a sprite with physics enabled via the physics system. The image used for the sprite has
     // a bit of whitespace, so I'm using setSize & setOffset to control the size of the player's body.
     player = this.physics.add
@@ -163,22 +136,19 @@ const config = {
       .setSize(30, 40) 
       .setOffset(0, 24);
 
-
       
-      boxes = this.physics.add.group();
-
-      console.log(boxes[0]);
+      
      
      this.physics.add.collider(player, worldLayer);
      this.physics.add.collider(boxes, worldLayer);
 
-     this.physics.add.overlap(player, boxes, collectBox, null, this);
+
 
     
 
 
 
- //  Our player animations, turning, walking left and walking right.
+ //  Our player animations, turning, walking left, right, up and down.
     this.anims.create({
         key: 'left',
         frames: this.anims.generateFrameNumbers('atlas-left', { start: 0, end: 4 }),
@@ -216,11 +186,7 @@ const config = {
 
  
 
-    
-            
-   
 
-   
   
   
     const camera = this.cameras.main;
@@ -229,16 +195,20 @@ const config = {
   
     cursors = this.input.keyboard.createCursorKeys();
   
-    
-    this.add
-      .text(16, 16, "", {
-        font: "18px monospace",
+   
+    // scoreText.setText('Score: ' + 10);
+
+    //Text to display Score
+
+   scoreText = this.add
+      .text(16, 16, "Score: 0", {
+        font: "20px monospace",
         fill: "#000000",
         padding: { x: 20, y: 10 },
-        //  backgroundColor: "#ffffff",
+          backgroundColor: "#ffffff",
       })
       .setScrollFactor(0)
-      .setDepth(30);
+      .setDepth(10);
   
     // Debug graphics
     this.input.keyboard.once("keydown-D", (event) => {
@@ -254,7 +224,10 @@ const config = {
       });
     });
 
+    
 
+    this.physics.add.overlap(player, boxes, this.collectBox, null, this);
+    this.physics.add.collider(player, boxes, collectBox, null, this);
 
 
     
@@ -265,9 +238,7 @@ const config = {
   
   function update(time, delta) {
 
-
-
-
+  
   
     var left = leftButton.setInteractive();
     var right = rightButton.setInteractive();
@@ -276,165 +247,106 @@ const config = {
   
 
 
-    left.on('pointerdown', function(pointer){
-      
+    left.on('pointerdown', function(pointer){   
 
       if(cursors.left.isDown){
         cursors.left.isDown = false
       }else{
         cursors.left.isDown = true
       }
-     
       
     },this);
 
     left.on('pointerout', function(pointer){
-      console.log('false');
-
       cursors.left.isDown = false;
-      
-      
       
     },this);
 
 
 
     right.on('pointerdown', function(pointer){
-      
-
       if(cursors.right.isDown){
         cursors.right.isDown = false
       }else{
         cursors.right.isDown = true
       }
-     
       
     },this);
 
     right.on('pointerout', function(pointer){
-      console.log('false');
-
+      
       cursors.right.isDown = false;
-      
-      
-      
     },this);
 
     
     up.on('pointerdown', function(pointer){
-      
-
       if(cursors.up.isDown){
         cursors.up.isDown = false
       }else{
         cursors.up.isDown = true
       }
-     
       
     },this);
 
     up.on('pointerout', function(pointer){
-      console.log('false');
-
+      
       cursors.up.isDown = false;
-      
-      
-      
     },this);
 
 
     
     down.on('pointerdown', function(pointer){
-      
-
       if(cursors.down.isDown){
         cursors.down.isDown = false
       }else{
         cursors.down.isDown = true
       }
-     
-      
     },this);
 
     down.on('pointerout', function(pointer){
-      console.log('false');
-
       cursors.down.isDown = false;
-      
-      
-      
     },this);
-
 
 
 
 
     const speed = 175;
     const prevVelocity = player.body.velocity.clone();
-  
     
     player.body.setVelocity(0);
 
 
-
-
-
     this.input.mouse.disableContextMenu();
 
-    // this.input.on('pointerdown', function (pointer) {
-
-    //     if (pointer.rightButtonDown())
-    //     {
-    //       this.physics.velocityFromAngle(30, -300, player.body.velocity);
-    //       player.anims.play('open', true);
-    //     }
-       
-
-    // }, this); 
-
-
-    // let jump = function () {
-    //   if (player.body.touching.down) {
-    //     this.physics.velocityFromAngle(30, 300, player.body.velocity);
-    //     player.anims.play('down', true);
-    //   }
-    // }
-
-
- 
-
-
-
-
-    // document.getElementById('up').onclick() = this.upit;
-
+   
 
     if (cursors.left.isDown) {
+
+      
+
       this.physics.velocityFromAngle(-30, -300, player.body.velocity);
       player.anims.play('left', true);
-      // player.body.setVelocityX(-speed);
+     
     } else if (cursors.right.isDown) {
       this.physics.velocityFromAngle(-30, 300, player.body.velocity);
       player.anims.play('right', true);
-      // player.body.setVelocityX(speed);
+     
     }
-  
-    // Vertical movement
+   
     else if (cursors.up.isDown) {
       this.physics.velocityFromAngle(30, -300, player.body.velocity);
       player.anims.play('up', true);
-      // player.body.setVelocityY(-speed);
+     
     }
     else if (cursors.down.isDown ){
       this.physics.velocityFromAngle(30, 300, player.body.velocity);
       player.anims.play('down', true);
-      // player.body.setVelocityY(speed);
+     
     }
    
     else if ((this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE)).isDown){
-      // this.physics.velocityFromAngle(30, 300, player.body.velocity);
       player.anims.play('open', true);
-      // player.body.setVelocityY(speed);
+      
     }
   
     else{
