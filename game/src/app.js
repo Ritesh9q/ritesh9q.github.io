@@ -1,3 +1,13 @@
+
+
+let data = [
+  {id : 1712, url : "https://www.google.com"},
+  {id : 1880, url : "https://www.wikipedia.com"},
+  {id : 1990, url : "https://www.wikihow.com"}
+  ]; 
+
+// let myArray = []
+
 const config = {
     type: Phaser.CANVAS,
     width: window.innerWidth,
@@ -18,6 +28,7 @@ const config = {
   };
   
   const game = new Phaser.Game(config);
+  let json;
   let cursors;
   let player;
   let showDebug = false;
@@ -26,6 +37,8 @@ const config = {
   let boxes;
   let scoreText;
   let collected = 0;
+  let openBoxes;
+  let map;
      //controllers keys
 
     let controller_bg;
@@ -35,6 +48,8 @@ const config = {
     let downButton;
   
   function preload() {
+   
+
     this.load.image("tiles", " asset/tuxmon-sample-32px-extruded.png");
     this.load.image("box", " asset/box.png");
     this.load.image("box-opened", " asset/box-opened.png"); 
@@ -97,7 +112,7 @@ const config = {
   //  downButton =  this.add.sprite(250, 580, 'down-button').setScrollFactor(0);
   //  downButton.setDepth(101)
 
-    const map = this.make.tilemap({ key: "map" });
+     this.map = this.make.tilemap({ key: "map" });
 
   
 
@@ -109,18 +124,18 @@ const config = {
             print.text += `swipe, v = ${swipe.dragVelocity}\n`;
         }, this);
 
-
+ 
    
 
   
     // Parameters are the name you gave the tileset in Tiled and then the key of the tileset image in
     // Phaser's cache (i.e. the name you used in preload)
-    const tileset = map.addTilesetImage("tuxmon-sample-32px-extruded", "tiles");
+    const tileset = this.map.addTilesetImage("tuxmon-sample-32px-extruded", "tiles");
   
     // Parameters: layer name (or index) from Tiled, tileset, x, y
-    const belowLayer = map.createLayer("Below Player", tileset, 0, 0);
-    const worldLayer = map.createLayer("World", tileset, 0, 0);
-    const aboveLayer = map.createLayer("Above Player", tileset, 0, 0);
+    const belowLayer = this.map.createLayer("Below Player", tileset, 0, 0);
+    const worldLayer = this.map.createLayer("World", tileset, 0, 0);
+    const aboveLayer = this.map.createLayer("Above Player", tileset, 0, 0);
   
     worldLayer.setCollisionByProperty({ collides: true });
   
@@ -131,7 +146,7 @@ const config = {
   
     // Object layers in Tiled let you embed extra info into a map - like a spawn point or custom
     // collision shapes. In the tmx file, there's an object layer with a point named "Spawn Point"
-    const spawnPoint = map.findObject(
+    const spawnPoint = this.map.findObject(
       "Objects",
       (obj) => obj.name === "Spawn Point"
     );
@@ -147,7 +162,7 @@ const config = {
       this.boxes = this.physics.add.group();
       // this.boxes = map.createFromObjects('Objects', { gid: 26, key: 'box' },this);
       this.boxes.addMultiple(
-        map.createFromObjects('Objects', { gid: 26, key: 'box' },this)
+        this.map.createFromObjects('Objects', { gid: 26, key: 'box' },this) 
       );
       this.boxes.enableBody = true;
 
@@ -193,25 +208,14 @@ const config = {
       
    
     this.physics.add.collider(player, worldLayer);
-  
 
-  
     const camera = this.cameras.main;
     camera.startFollow(player);
-    camera.setBounds(0, 0, map.widthInPixels, map.heightInPixels);
+    camera.setBounds(0, 0, this.map.widthInPixels, this.map.heightInPixels);
   
     cursors = this.input.keyboard.createCursorKeys();
   
-    // Help text that has a "fixed" position on the screen
-    this.add
-      .text(16, 16, "", {
-        font: "18px monospace",
-        fill: "#000000",
-        padding: { x: 20, y: 10 },
-        //  backgroundColor: "#ffffff",
-      })
-      .setScrollFactor(0)
-      .setDepth(30);
+ 
   
     // Debug graphics
     this.input.keyboard.once("keydown-D", (event) => {
@@ -233,19 +237,6 @@ const config = {
       var velocityThreshold = swipe.velocityThreshold;
       swipe.setVelocityThreshold(velocityThreshold);
       console.log('Swipe Left');
-// swipe.velocityThreshold = velocityThreshold;
-
-
-
-      // this.rexGestures.add.press(game)
-      //           .on('pressstart', function (press) {
-      //             this.physics.velocityFromAngle(-30, -300, player.body.velocity);
-      //             player.anims.play('left', true);
-      //           })
-      //           .on('pressend', function (press) {
-      //               console.log('press end');
-      //           });
-     
 
     
     }
@@ -272,6 +263,7 @@ const config = {
   }
   
   function update(time, delta) {
+   
 
 
   //   this.boxes.forEach((box) => {
@@ -401,10 +393,7 @@ const config = {
     var playerImage = player.setInteractive();
 
       playerImage.on('pointerdown', function(pointer){
-      
-
       player.anims.stop(null,true);
-
       cursors.down.isDown = false;
       cursors.left.isDown = false;
       cursors.right.isDown = false;
@@ -417,10 +406,7 @@ const config = {
 
 
     if(this.swipeInput.up){
- 
-
       console.log('Swipe Up');
-
       cursors.down.isDown = false;
       cursors.left.isDown = false;
       cursors.right.isDown = false;
@@ -431,10 +417,7 @@ const config = {
     }
     
     if(this.swipeInput.down){
- 
-
       console.log('Swipe Down');
-
       cursors.down.isDown = true;
       cursors.left.isDown = false;
       cursors.right.isDown = false;
@@ -512,7 +495,7 @@ const config = {
     player.body.velocity.normalize().scale(speed);
 
 
-
+    this.physics.add.collider(player, openBoxes);
 
   }
   
@@ -542,10 +525,27 @@ const config = {
       console.log('Collect Box Executed....');
       collected += 1;
       scoreText.setText("Collected Box:"+collected);
-      console.log(boxes);
-      this.add.image(boxes.x,boxes.y,"box-opened");
+
+      // var id = boxes.id
+
+       //var url = this.map.createFromObjects('Objects', { id: boxes.id , key: 'box' },this);
+    // var url =  JSON.parse(data);
+    // console.log(boxes.x);
+    var x =  data.filter(obj => obj.id === boxes.x)
+
+      // console.log(data)
+ 
+      //  console.log(x[0].url);
+   
+      this.openBoxes = this.add.image(boxes.x,boxes.y,"box-opened");
+     
       boxes.destroy();
 
-      // window.open();
+ 
+     if(x[0]){
+      window.open(x[0].url);
+     }
+     
   
   }
+ 
