@@ -1,0 +1,21 @@
+{
+ "type": "module",
+ "links":[
+     {
+         "id":1,
+         "url":"www.facebook.com"
+     },
+     {
+        "id":2,
+        "url":"www.google.com"
+    },
+    {
+        "id":3,
+        "url":"www.yahoo.com"
+    },
+    {
+        "id":4,
+        "url":"www.microsoft.com"
+    }
+ ]
+}
