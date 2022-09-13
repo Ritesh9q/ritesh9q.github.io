@@ -659,9 +659,9 @@ this.anims.create({
       boxes.destroy();
 
  
-    //  if(x[0]){
-    //   window.open(x[0].url);
-    //  }
+     if(x[0]){
+      window.open(x[0].url);
+     }
      
   
   }
