@@ -108,7 +108,7 @@ const config = {
     .setDepth(10);
 
 
-    this.anims.on(Phaser.Animations.Events.ADD_ANIMATION, addCoinAnimation, this);
+   // this.anims.on(Phaser.Animations.Events.ADD_ANIMATION, addCoinAnimation, this);
 
 
        //controller images
