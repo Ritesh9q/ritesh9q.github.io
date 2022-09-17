@@ -39,6 +39,7 @@ const config = {
   let collected = 0;
   let openBoxes;
   let map;
+  let coins;
      //controllers keys
 
     let controller_bg;
@@ -55,7 +56,7 @@ const config = {
     this.load.tilemapTiledJSON("map", " asset/tuxemon-town-n.json");
     //this.load.image("atlas", " asset/Boy-skateboard.png");
 
-    this.load.spritesheet("atlas", " asset/player-new.png",{ frameWidth: 45, frameHeight: 90 });
+    this.load.spritesheet("atlas", " asset/player-new.png",{ frameWidth: 40, frameHeight: 90 });
 
     this.load.spritesheet("atlas-left", " asset/player/left.png",{ frameWidth: 45, frameHeight: 90 });
     this.load.spritesheet("atlas-right", " asset/player/right.png",{ frameWidth: 40, frameHeight: 85 });
@@ -80,7 +81,7 @@ const config = {
     this.load.image("box-opened", " asset/box-open-red.png");  
     this.load.image("box-completed", " asset/box-opened.png");   
 
-    this.load.spritesheet("coins", "asset/Coin-animation.png", { frameWidth: 37, frameHeight: 40 });
+    this.load.spritesheet("coins", "asset/Coin-animation.png", { frameWidth: 150, frameHeight: 90 }); 
 
 
     
@@ -105,6 +106,10 @@ const config = {
     })
     .setScrollFactor(0)
     .setDepth(10);
+
+
+    this.anims.on(Phaser.Animations.Events.ADD_ANIMATION, addCoinAnimation, this);
+
 
        //controller images
   //  controller_bg =  this.add.image(190, 550, 'controller-bg').setScrollFactor(0);
@@ -170,6 +175,9 @@ const config = {
       .setSize(30, 30)
       .setOffset(0, 24) 
       .setDepth(1);  
+
+     
+
 
 
       // player.setCollideWorldBounds(true)
@@ -584,9 +592,18 @@ this.anims.create({
     }
    
     else if ((this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE)).isDown){
-      // this.physics.velocityFromAngle(30, 300, player.body.velocity);
-      player.anims.play('open', true);
-      // player.body.setVelocityY(speed);
+
+      console.log('coin animation is running..')
+
+      //this.anims.create({ key: 'coins', frames: this.anims.generateFrameNames('coins', { prefix: 'coins', end: 15, zeroPad: 4 }), repeat: -1 });
+
+    
+      coins.anims.play('coins', true);
+
+      setTimeout(()=>{
+        coins.anims.stop(null,true);
+      },2000)
+      
     }
   
     else{
@@ -644,25 +661,49 @@ this.anims.create({
       //  console.log(x[0].url);
    
       this.openBoxes = this.physics.add.image(boxes.x,boxes.y,"box-opened").setImmovable(); 
+
+
+      coins = this.physics.add
+      .sprite(130, 70, "coins")
+      .setDepth(100)
+      .setScrollFactor(0)
+
+
+      coins.anims.play('coins', true);
+
+      setTimeout(()=>{
+        coins.anims.stop(null,true);
+      },600)
+
+      setTimeout(()=>{
+        coins.destroy();
+      },600)
+
+      
+
       //this.physics.add.overlap(player,this.openBoxes)
  
       // player.anims.play('box-opens', true);
 
       setTimeout(()=>{ 
         this.openBoxes.destroy();             
-        this.openBoxes = this.physics.add.image(boxes.x,boxes.y,"box-completed").setImmovable();
+        this.openBoxes = this.physics.add.image(boxes.x,boxes.y,"box-completed")
+        .setImmovable()
+        .setSize(50, 50)
        // this.physics.add.overlap(player,this.openBoxes)
         
       },1000);
-
-     
+  
+       
       boxes.destroy();
 
  
-     if(x[0]){
-      window.open(x[0].url);
-     }
+    //  if(x[0]){
+    //   window.open(x[0].url);
+    //  }
      
   
   }
+
+
  
