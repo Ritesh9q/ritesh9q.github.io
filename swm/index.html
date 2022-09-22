@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SingWithMe</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="app/dist/app.css">
+    <link rel="stylesheet" href="app/dist/swiper-bundle.min.css" >
+    <!-- end Styles -->
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/logo/favicon.png">
+
+</head>
+<body class="home-music header-fixed" data-magic-cursor="show">
+<!-- Preloading -->
+    <div class="preloader">
+        <div class=" loader">
+            <div class="square"></div>
+            <div class="path">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+          <p class="text-load">Loading :</p>
+        </div>
+    </div> 
+    <!-- End Preloading -->
+    <!-- MAGIC CURSOR -->
+		<div class="mouse-cursor cursor-outer"></div>
+		<div class="mouse-cursor cursor-inner"></div>
+	<!-- /MAGIC CURSOR -->
+
+
+    <!-- Header -->
+    <header id="header_main" class="header style-5">
+        <div class="container">
+            <div class="row" style="background-color:#050231">
+                <div class="col-12">
+                    <div  class="header__body">
+                        <div class="header__logo">
+                            <a href="#">
+                                <img style="margin-top:-10px;" id="site-logo"  src="assets/images/logo.png"
+                                alt="Monteno" 
+                                data-retina="assets/images/logo/logo-main@x2.png" data-width="165"
+                                data-height="40">
+                            </a>
+                        </div>
+
+                        <div class="header__right">
+                            <nav id="main-nav" class="main-nav">
+                                <ul id="menu-primary-menu" class="menu">
+                                    <!-- <li class="menu-item menu-item-has-children current-menu-item">
+                                        <a href="#">Home Page</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="index-2.html">Home Main</a></li>
+                                            <li class="menu-item"><a href="home-nft.html">Home NFT 01</a></li>
+                                            <li class="menu-item"><a href="home-nft-v2.html">Home NFT 02</a></li>
+                                            <li class="menu-item current-item"><a href="home-music.html">Home Music</a></li>
+                                            <li class="menu-item"><a href="home-defi-v1.html">Home Defi 01</a></li>
+                                            <li class="menu-item"><a href="home-defi-v2.html">Home Defi 02</a></li>
+                                            <li class="menu-item"><a href="home-defi-v3.html">Home Defi 03</a></li>
+                                            <li class="menu-item"><a href="home-defi-v4.html">Home Defi 04</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#">Home Dashboad</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="dashboard-tokensales.html">Token Sales</a></li>
+                                            <li class="menu-item"><a href="dashboard-features.html">Our Feature</a></li>
+                                            <li class="menu-item"><a href="dashboard-roadmap.html">Road Map</a></li>
+                                            <li class="menu-item"><a href="dashboard-creations.html">Our Creations</a></li>
+                                            <li class="menu-item"><a href="dashboard-team.html">Our Team</a></li>
+                                            <li class="menu-item"><a href="dashboard-faq.html">FaQs</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#">Blog Page</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="blog-v1.html">Blog Style 01</a></li>
+                                            <li class="menu-item"><a href="blog-v2.html">Blog Style 02</a></li>
+                                            <li class="menu-item"><a href="blog-v3.html">Blog Style 03</a></li>
+
+                                        </ul>
+                                    </li> -->
+                                    <!-- <li class="menu-item">
+                                            <a class="btn-action-outline style-6" href="#">
+                                                    <span>LOGIN</span>
+                                                </a>
+                                    </li> -->
+                                    <!-- <li class="menu-item menu-item-has-children">
+                                        <a href="#">Elements</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="about-us.html">About Us</a></li>
+                                            <li class="menu-item"><a href="features.html">Features</a></li>
+                                            <li class="menu-item"><a href="roadmap.html">Road Map</a></li>
+                                            <li class="menu-item"><a href="document.html">Documents</a></li>
+                                            <li class="menu-item"><a href="our-team.html">Our Team</a></li>
+                                            <li class="menu-item"><a href="partner.html">Partner</a></li>
+                                            <li class="menu-item"><a href="token-sales.html">Token Sale</a></li>
+                                            <li class="menu-item"><a href="button.html">Button</a></li>
+                                            
+                                            <li class="menu-item"><a href="footer.html">Footer</a></li>
+                                            
+                                            
+                                            <li class="menu-item"><a href="faq.html">Faq</a></li>
+                                            <li class="menu-item"><a href="icon.html">Icon</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#">Pages</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="sign-in.html">Sign In</a></li>
+                                            <li class="menu-item"><a href="sign-up.html">Sign Up</a></li>
+                                            <li class="menu-item"><a href="page-404.html">Page 404</a></li>
+                                            <li class="menu-item"><a href="comingsoon.html">Coming Soon</a></li>
+                                        </ul>
+                                    </li> -->
+                                </ul>
+                                
+                            </nav>
+                            <div class="group-button">
+                                <a class="btn-action-outline style-6" href="#">
+                                    <span>LOGIN</span>
+                                </a>
+                            </div>
+                            <!-- <div class="mobile-button"><span></span></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end Header -->
+
+     <!-- Banner Top -->
+     <section class="banner-top style-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-12">
+                    <div class="banner-top__content">
+                        <h2 class="title">Learn <span>music </span>at your own pace</h2>
+                        <p class="desc">Follow lesson plans created by real music teachers, learn fast with interactive tutorials, and stay motivated with goals and progress tracking.</p>
+                        <div class="button">
+                            <a href="#" class="btn-action style-3"><span>GET STARTED</span></a> 
+                            <!-- <a class="btn-action-outline style-2" href="#">
+                                <span>White paper</span>
+                            </a> -->
+                        </div>
+
+                        <!-- <ul class="content-list">
+                            <li>
+                                <h5 class="number">1M+</h5>
+                                <p>Views</p>
+                            </li>
+                            <li>
+                                <h5 class="number">20k+</h5>
+                                <p>Students</p>
+                            </li>
+                            <li>
+                                <h5 class="number">100+</h5>
+                                <p>Teachers</p>
+                            </li>
+                        </ul> -->
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-12">
+                    <div class="banner-top__sale">
+                        <img src="assets/images/layout/img-music.jpg" alt="ICOLand">
+                        <div class="sale-content">
+                            <h6>Lessons and Courses from<br> India's Best</h6>
+
+                            <!-- <span class="js-countdown" data-timer="2865550"></span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Banner Top -->
+
+    <!-- Section About -->
+    <section style="margin-top:-100px;margin-bottom:-180px;" class="about style-3" >
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-12">
+                    <div class="about__video">
+                        <img src="assets/images/background/bg-video.jpg" alt="ICOLand">
+                        <!-- <div class="wrap-video">
+                            <a href="#" class="popup-youtube">
+                                <span class="icon-play"></span>
+                            </a>
+                        </div>   -->
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-12">
+                    <div class="about__content">
+                        <h6 class="sub-title">NEW PREMIUM+ FAMILY MEMBERSHIP</h6>
+                        <h3 class="title">Learn together with the Yousician Family membership</h3>
+                        <p class="text">Share the fun of learning to play with your family
+                            4 Premium+ accounts under one membership
+                            </p>
+                            <a href="#" class="btn-action-outline style-6"><span>LEARN MORE</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section About -->
+
+
+    <section class="blog" id="blog">
+            <div class="container">
+                    <div class="block-text center">
+                            <h6 class="sub-heading">Explore</h6>
+                            <h3 class="heading">
+                                Our Courses
+                            </h3>
+                        </div>
+                <div class="row">
+                      
+    
+                    <div style="margin-bottom:15px;" class="col-md-6">
+                        <div class="blog-box">
+                            
+                            <div class="box-content">
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12">
+                                            <a href="#" class="h5 title">Elementary Course</a>
+                                            <br><br>
+
+                                            <span style="float:left">1. Take simple songs to perform </span><br>
+                                            <span style="float:left">2. Basic vocal excercises required to sing particular song</span><br>
+                                            <span style="float:left">3. Elementary knowledge of voice culture</span> <br>
+                                            <span style="float:left">4. Understanding the lyrics of the song </span> <br>
+                                            <span style="float:left">5. Basic vocal modulations or excercise for the particular song .</span>
+                                           <br><br>
+                                            <a  class="btn-action-outline style-6"><span>ENROLL NOW</span></a>
+                                    </div>
+                                   
+                                </div>
+                                
+                               
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                            <div class="blog-box">
+                                
+                                <div class="box-content">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-sm-12">
+                                                <a href="#" class="h5 title">Advanced Course</a>
+                                                <br><br>
+
+                                                <span style="float:left">1. Tough songs to perform which general people hesitate to take up</span><br>
+                                                <span style="float:left">2. Voice culture excercises to sing Bollywood songs in a particular manner</span> <br>
+                                                <span style="float:left">3. Use of voice or adaptation of different styles of singing required for particular song </span><br>
+                                                <span style="float:left">4. Vocal excercises for modulations required in the songs </span><br>
+                                                <span style="float:left">5. Understanding the pitch and tone </span> <br>
+                                                <span style="float:left">6. Difference of performing  one particular song on stage recording studio </span> <br>
+                                                <span style="float:left">8. Understanding basic studio techniques </span> <br>
+                                                <span style="float:left">9. Preparing songs for singing competitions such as Indian idol n Saregamapa </span> <br>
+                                                <span style="float:left">10. Understanding the taal </span> <br>
+                                                <br><span style="float:left">11. Knowledge of lyrics </span>
+                                                <br><br>
+                                                <a  class="btn-action-outline style-6"><span>ENROLL NOW</span></a>
+                                             
+                                        </div>
+                                       
+                                    </div>
+                                    
+                                   
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+
+
+    
+
+    <!-- Section Features -->
+
+    <!-- <section class="features style-3" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block-text center">
+                        <h6 class="sub-heading">Explore</h6>
+                        <h3 class="heading">
+                            Our Courses
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                
+               
+                <div class="col-xl-6 col-md-6">
+                    <div class="features-box-3 center">
+                        
+                        <div class="features-box-content">
+                            <a href="#" class="h5 title">Elementary Course</a>
+                            <div style="font-size:15px;" ><br>
+
+
+                                    <span style="float:left">1. Take simple songs to perform </span><br>
+                                    <span style="float:left">2. Basic vocal excercises required to sing particular song</span><br>
+                                    <span style="float:left">3.elementary knowledge of voice culture</span> <br>
+                                    <span style="float:left">4. Understanding the lyrics of the song </span> <br>
+                                    <span style="float:left">5.basic vocal modulations or excercise for the particular song .</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6">
+                    <div class="box-roadmap center">
+                        
+                        <div class="">
+                            <a href="#" class="h5 title">Advanced Course</a>  
+                            <p style="font-size:15px;">
+                                    <br>
+                                   
+                                    <span style="float:left">1. Tough songs to perform which general people hesitate to take up</span><br>
+                                    <span style="float:left">2. Voice culture excercises to sing Bollywood songs in a particular manner</span> <br>
+                                    <span style="float:left">3. Use of voice or adaptation of different styles of singing required for <br>particular song </span><br>
+                                    <span style="float:left">4. Vocal excercises for modulations required in the songs </span><br>
+                                    <span style="float:left">5. Understanding the pitch and tone </span> <br>
+                                    <span style="float:left">6. Difference of performing  one particular song on stage recording studio </span> <br>
+                                    <span style="float:left">8. Understanding basic studio techniques </span> <br>
+                                    <span style="float:left">9. Preparing songs for singing competitions such as Indian idol n Saregamapa </span> <br>
+                                    <span style="float:left">10. Understanding the taal </span> <br>
+                                    <span style="float:left">11. Knowledge of lyrics </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End Section Features -->
+
+    <!-- Section token -->
+    <!-- <section class="token style-3" id="token">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-12">
+                    <div class="block-text">
+                        <h6 class="sub-heading">Tokenomics</h6>
+                        <h3 class="heading">WE ARE GROWING</h3>
+                        <p class="desc">For each transaction, an 12% tax fee is applied. This fee is then divided for different purpose of benefits.</p>
+
+                        <a href="#" class="btn-action-outline style-6"><span>White paper</span></a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-12">
+                    <div class="token__content">
+                        <div class="top">
+                            <h2 class="number">1,000,000</h2>
+                            <h6 class="text">Total supply</h6>
+                        </div>
+                        <ul class="list">
+                            <li>
+                                <h6 class="title">Marketing</h6>
+                                <h2 class="number">4%</h2>
+                            </li>
+                            <li>
+                                <h6 class="title">Liquidity</h6>
+                                <h2 class="number">4%</h2>
+                            </li>
+                            <li>
+                                <h6 class="title">REflection</h6>
+                                <h2 class="number">2%</h2>
+                            </li>
+                            <li>
+                                <h6 class="title">Burned</h6>
+                                <h2 class="number">1%</h2>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End Section token -->
+
+    <!-- Section Road Map -->
+    <!-- <section class="road-map style-3" id="roadmap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block-text center">
+                        <h6 class="sub-heading">Milestones</h6>
+                        <h3 class="heading">Road map</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="road-map__main">
+            <div class="box-roadmap">
+                <div class="icon"></div>
+                <h5 class="title">Q1 2021</h5>
+                <ul class="list">
+                    <li><span class="icon-roadmap"></span><p>Release website and logo</p></li>
+                    <li><span class="icon-roadmap"></span><p>Grow community</p></li>
+                    <li><span class="icon-roadmap"></span><p>Launch the project</p></li>
+                    <li><span class="icon-roadmap"></span><p>Social media setup</p></li>
+                </ul>
+            </div>
+            <div class="box-roadmap">
+                <div class="icon"></div>
+                <h5 class="title">Q2 2021</h5>
+                <ul class="list">
+                    <li><span class="icon-roadmap"></span><p>Release website and logo</p></li>
+                    <li><span class="icon-roadmap"></span><p>Grow community</p></li>
+                    <li><span class="icon-roadmap"></span><p>Launch the project</p></li>
+                    <li><span class="icon-roadmap"></span><p>Social media setup</p></li>
+                </ul>
+            </div>
+            <div class="box-roadmap">
+                <div class="icon"></div>
+                <h5 class="title">Q3 2021</h5>
+                <ul class="list">
+                    <li><span class="icon-roadmap"></span><p>Release website and logo</p></li>
+                    <li><span class="icon-roadmap"></span><p>Grow community</p></li>
+                    <li><span class="icon-roadmap"></span><p>Launch the project</p></li>
+                    <li><span class="icon-roadmap"></span><p>Social media setup</p></li>
+                </ul>
+            </div>
+            <div class="box-roadmap">
+                <div class="icon"></div>
+                <h5 class="title">Q4 2021</h5>
+                <ul class="list">
+                    <li><span class="icon-roadmap"></span><p>Release website and logo</p></li>
+                    <li><span class="icon-roadmap"></span><p>Grow community</p></li>
+                    <li><span class="icon-roadmap"></span><p>Launch the project</p></li>
+                    <li><span class="icon-roadmap"></span><p>Social media setup</p></li>
+                </ul>
+            </div>
+        </div>
+    </section> -->
+    <!-- End Section Road Map -->
+
+    <!-- Section Gallery -->
+    <section style="margin-bottom:-100px;" class="gallery" id="gallery">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-md-4">
+                    <div class="block-text">
+                        <h6 class="sub-heading">Gallery</h6>
+                        <h3 class="heading">NFT Musical arts</h3>
+                        <p class="fs-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam etiam viverra tellus imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#" class="btn-action-outline style-6"><span>View more</span></a>
+                    </div>
+                </div> -->
+                <div class="col-md-1"></div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="gallery__box">
+                        <img class="img-fluid" src="assets/images/gallery/gallery-01.jpg" alt="ICOLand">
+                        <div class="wrap-video">
+                            <a  class="popup-youtube">
+                                <span class="icon-play"></span>
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h5 class="title">Orchestral NFTs</h5>
+                            <p class="category">3LAUSES</p>
+                            <a  class="btn-action-outline style-6"><span>ENROLL NOW</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="gallery__box">
+                        <img class="img-fluid" src="assets/images/gallery/gallery-02.jpg" alt="ICOLand">
+                        <div class="wrap-video">
+                            <a  class="popup-youtube">
+                                <span class="icon-play"></span>
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h5 class="title">Ultraviolet Vinyl Collection</h5>
+                            <p class="category">3LAUSES</p>
+                            <a  class="btn-action-outline style-6"><span>ENROLL NOW</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <!-- <div class="col-md-4">
+                    <div class="gallery__box">
+                        <img src="assets/images/gallery/gallery-03.jpg" alt="ICOLand">
+                        <div class="wrap-video">
+                            <a  class="popup-youtube">
+                                <span class="icon-play"></span>
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h5 class="title">Tacnocde NFT Music</h5>
+                            <p class="category">Tacnocde</p>
+                            <a  class="btn-action-outline style-6"><span>ENROLL NOW</span></a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-md-4">
+                    <div class="gallery__box">
+                        <img src="assets/images/gallery/gallery-04.jpg" alt="ICOLand">
+                        <div class="wrap-video">
+                            <a href="https://www.youtube.com/watch?v=i7EMACWuErA" class="popup-youtube">
+                                <span class="icon-play"></span>
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h5 class="title">NFT Live Beats</h5>
+                            <p class="category">NickkYoung</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery__box">
+                        <img src="assets/images/gallery/gallery-05.jpg" alt="ICOLand">
+                        <div class="wrap-video">
+                            <a href="https://www.youtube.com/watch?v=i7EMACWuErA" class="popup-youtube">
+                                <span class="icon-play"></span>
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h5 class="title">Original Acoussic Music Album</h5>
+                            <p class="category">ThomasWWote</p>
+                        </div>
+                    </div>
+                </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section Gallery -->
+
+    <!-- Section Team -->
+    <section  class="section-team style-2" id="team">
+        <div class="container">
+            <div style="margin-left:30px;" class="row">
+                    <div class="block-text">
+                  <h6 class="sub-title fs-18">Hear from our Fans</h6>
+                        <!-- <h3 class="title">Reviews</h3> -->
+
+                </div>
+                <div class="col-xl-12 col-md-12">
+
+                    <div class="swiper swiper-team-2">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide">
+                            <div class="team-box">
+                                <div class="team-box__image">
+                                    <!-- <img src="assets/images/avt/team-06.jpg" alt="ICOLand"> -->
+                                   
+                                </div>
+                                <div class="team-box__content">
+                                        <p class="position fs-17">"Biswa Mast Aadmi, enjoying SingWithMe, Biswa's lessons and courses, all the open mics, active community support and other activities."</p>
+                                    <a href="#" class="h5 name fs-24">Divya Shah</a>
+                                   
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="team-box">
+                                <div class="team-box__image">
+                                    <!-- <img src="assets/images/avt/team-06.jpg" alt="ICOLand">
+                                    <ul class="list-social">
+                                        <li><a href="#"><span class="icon-LinkedIn"></span></a></li>
+                                        <li><a href="#"><span class="icon-Facebook"></span></a></li>
+                                        <li><a href="#"><span class="icon-Instagram"></span></a></li>
+                                        <li><a href="#"><span class="icon-WhatsApp"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></a></li>
+                                    </ul> -->
+                                </div>
+                                <div class="team-box__content">
+                                    <p class="position fs-17">"I appreciate the initiative taken by SingWithMe to extend the knowledge of music to commoners. Mr. Vikrant Puri is fantabulous and has a lucid and simple style of explaining."</p>
+                                    <a href="#" class="h5 name fs-24">Dr. Sheekha Borhade</a>
+                                    
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="team-box">
+                                <!-- <div class="team-box__image">
+                                    <img src="assets/images/avt/team-07.jpg" alt="ICOLand">
+                                    <ul class="list-social">
+                                        <li><a href="#"><span class="icon-LinkedIn"></span></a></li>
+                                        <li><a href="#"><span class="icon-Facebook"></span></a></li>
+                                        <li><a href="#"><span class="icon-Instagram"></span></a></li>
+                                        <li><a href="#"><span class="icon-WhatsApp"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></a></li>
+                                    </ul>
+                                </div> -->
+                                <div class="team-box__content">
+                                    <p class="position fs-17">Not a paid promotion. Whoever is reading this comment. TRUST ME IT IS THE BEST TO LEARN MUSIC. I joined it for Neha Kakkar tutorial but truly the app not just teach you singing but also piano and guitar lesson.</p>
+                                    <a href="#" class="h5 name fs-24">Aditya jha</a>
+                                   
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                                <div class="team-box">
+                                    <!-- <div class="team-box__image">
+                                        <img src="assets/images/avt/team-07.jpg" alt="ICOLand">
+                                        <ul class="list-social">
+                                            <li><a href="#"><span class="icon-LinkedIn"></span></a></li>
+                                            <li><a href="#"><span class="icon-Facebook"></span></a></li>
+                                            <li><a href="#"><span class="icon-Instagram"></span></a></li>
+                                            <li><a href="#"><span class="icon-WhatsApp"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></a></li>
+                                        </ul>
+                                    </div> -->
+                                    <div class="team-box__content">
+                                        <p class="position fs-17">Not a paid promotion. Whoever is reading this comment. TRUST ME IT IS THE BEST TO LEARN MUSIC. I joined it for Neha Kakkar tutorial but truly the app not just teach you singing but also piano and guitar lesson.</p>
+                                        <a href="#" class="h5 name fs-24">Aditya jha</a>
+                                       
+                                    </div>
+                                </div>
+                              </div>
+                          <!-- <div class="swiper-slide">
+                            <div class="team-box">
+                                <div class="team-box__image">
+                                    <img src="assets/images/avt/team-08.jpg" alt="ICOLand">
+                                    <ul class="list-social">
+                                        <li><a href="#"><span class="icon-LinkedIn"></span></a></li>
+                                        <li><a href="#"><span class="icon-Facebook"></span></a></li>
+                                        <li><a href="#"><span class="icon-Instagram"></span></a></li>
+                                        <li><a href="#"><span class="icon-WhatsApp"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-box__content">
+                                    <a href="#" class="h5 name fs-24">Ralph Edwards</a>
+                                    <p class="position fs-17">Sr. Backend Developer</p>
+                                </div>
+                            </div>
+                          </div> -->
+                          <!-- <div class="swiper-slide">
+                            <div class="team-box">
+                                <div class="team-box__image">
+                                    <img src="assets/images/avt/team-06.jpg" alt="ICOLand">
+                                    <ul class="list-social">
+                                        <li><a href="#"><span class="icon-LinkedIn"></span></a></li>
+                                        <li><a href="#"><span class="icon-Facebook"></span></a></li>
+                                        <li><a href="#"><span class="icon-Instagram"></span></a></li>
+                                        <li><a href="#"><span class="icon-WhatsApp"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-box__content">
+                                    <a href="#" class="h5 name fs-24">Ralph Edwards</a>
+                                    <p class="position fs-17">Sr. Backend Developer</p>
+                                </div>
+                            </div>
+                          </div> -->
+                          <!-- <div class="swiper-slide">
+                            <div class="team-box">
+                                <div class="team-box__image">
+                                    <img src="assets/images/avt/team-07.jpg" alt="ICOLand">
+                                    <ul class="list-social">
+                                        <li><a href="#"><span class="icon-LinkedIn"></span></a></li>
+                                        <li><a href="#"><span class="icon-Facebook"></span></a></li>
+                                        <li><a href="#"><span class="icon-Instagram"></span></a></li>
+                                        <li><a href="#"><span class="icon-WhatsApp"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-box__content">
+                                    <a href="#" class="h5 name fs-24">Ralph Edwards</a>
+                                    <p class="position fs-17">Sr. Backend Developer</p>
+                                </div>
+                            </div>
+                          </div> -->
+                          <!-- <div class="swiper-slide">
+                            <div class="team-box">
+                                <div class="team-box__image">
+                                    <img src="assets/images/avt/team-08.jpg" alt="ICOLand">
+                                    <ul class="list-social">
+                                        <li><a href="#"><span class="icon-LinkedIn"></span></a></li>
+                                        <li><a href="#"><span class="icon-Facebook"></span></a></li>
+                                        <li><a href="#"><span class="icon-Instagram"></span></a></li>
+                                        <li><a href="#"><span class="icon-WhatsApp"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-box__content">
+                                    <a href="#" class="h5 name fs-24">Ralph Edwards</a>
+                                    <p class="position fs-17">Sr. Backend Developer</p>
+                                </div>
+                            </div>
+                          </div> -->
+
+                        </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    
+                    
+                </div>
+                
+            </div>
+            <div style="margin-left:600px;">
+                    <div class="block-text">
+                        <!-- <h6 class="sub-title fs-18">Our Team</h6>
+                        <h3 class="title">Meet our members</h3>
+                        <p class="fs-20">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam etiam viverra tellus imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p> -->
+                        <div class="swiper-button-prev">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0007 1.66663C30.1259 1.66663 38.334 9.87473 38.334 20C38.334 30.1252 30.1259 38.3333 20.0007 38.3333C9.87543 38.3333 1.66732 30.1252 1.66732 20C1.66732 9.87473 9.87543 1.66663 20.0007 1.66663ZM29.5909 20.4166C29.5909 19.4961 28.8447 18.75 27.9242 18.75H16.9479L21.6027 14.0951C22.2536 13.4443 22.2536 12.389 21.6027 11.7381C20.9519 11.0872 19.8966 11.0872 19.2457 11.7381L11.7469 19.2369C11.7429 19.2409 11.7389 19.245 11.7349 19.249C11.5805 19.4063 11.4635 19.5865 11.384 19.7787C11.3031 19.9737 11.2582 20.1875 11.2576 20.4116L11.2576 20.4166L11.2576 20.4216C11.2589 20.8743 11.4407 21.2846 11.7349 21.5842C11.7389 21.5883 11.7429 21.5923 11.7469 21.5963L19.2457 29.0951C19.8966 29.746 20.9519 29.746 21.6027 29.0951C22.2536 28.4443 22.2536 27.389 21.6027 26.7381L16.9479 22.0833H27.9242C28.8447 22.0833 29.5909 21.3371 29.5909 20.4166Z" fill="#636770"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="swiper-button-next">
+                            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9993 0.666626C8.87412 0.666626 0.666016 8.87473 0.666016 19C0.666016 29.1252 8.87412 37.3333 18.9993 37.3333C29.1246 37.3333 37.3327 29.1252 37.3327 19C37.3327 8.87473 29.1246 0.666626 18.9993 0.666626ZM9.4091 19.4166C9.4091 18.4961 10.1553 17.75 11.0758 17.75H22.0521L17.3973 13.0951C16.7464 12.4443 16.7464 11.389 17.3973 10.7381C18.0481 10.0872 19.1034 10.0872 19.7543 10.7381L27.2531 18.2369C27.2571 18.2409 27.2611 18.245 27.2651 18.249C27.4195 18.4063 27.5365 18.5865 27.616 18.7787C27.6969 18.9737 27.7418 19.1875 27.7424 19.4116L27.7424 19.4166L27.7424 19.4216C27.7411 19.8743 27.5593 20.2846 27.2651 20.5842C27.2611 20.5883 27.2571 20.5923 27.2531 20.5963L19.7543 28.0951C19.1034 28.746 18.0481 28.746 17.3973 28.0951C16.7464 27.4443 16.7464 26.389 17.3973 25.7381L22.0521 21.0833H11.0758C10.1553 21.0833 9.4091 20.3371 9.4091 19.4166Z" fill="#636770" />
+                                </svg>                                
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!-- End Section Team -->
+
+
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- <div class="block-text center">
+                        <h6 class="sub-heading">
+                            Blog
+                        </h6>
+                        <h3 class="heading">
+                            Latest News
+                        </h3>
+                    </div> -->
+                </div>
+
+                <div class="col-md-12">
+                    <div class="blog-box">
+                        
+                        <div class="box-content">
+                            <div class="row">
+                                <div class="col-lg-8 col-sm-12">
+
+                                       <br>
+                                        <a  style="font-size:35px;" class="h5 title">Get the SongWithMe app now!</a>
+                                        <p class="text">Access our community platform, get personalized feedback, participate in live challenges, win awesome prizes and more.</p>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-lg-2 col-sm-6">
+                                                    <h5>2M+ </h5><p>Installs</p>
+                                            </div>
+                                            <div class="col-lg-2 col-sm-6">
+                                                    <h5>4.4+ </h5><p>Ratings</p>
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12">
+                                                    <h5>Best Apps of 2022 </h5><p>Category: Fun</p>
+                                            </div>
+                                            <!-- <div class="col">
+                                                    <h4>2M+ </h4><p>Installs</p>
+                                            </div> -->
+                                        </div>
+                                           
+                                     
+                                        <br>
+
+                                        
+                                        <a  class="btn-action-outline style-6"><span>DOWNLOAD APP</span></a>
+                                            <br>
+                                </div>
+                                <div class="col-lg-4 col-sm-12">
+                                        <img class="img-fluid" src="assets/images/frontrow_mobile_app_image.png" width="300" alt="">
+                                </div>
+
+                            </div>
+                            
+                           
+                           
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Section Partner -->
+    <!-- <section style="background-color:linear-gradient(359.96deg, #0F141E 0.02%, rgba(15, 20, 30, 0.84375) 43.22%, rgba(15, 20, 30, 0) 99.95%);" class="section-partner style-1" id="partner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="partner__main">
+                            <div class="block-text ">
+                                <h3 class="heading">Strategic Partners</h3>
+                                <p class="fs-0">Join the industry leaders to discuss where the markets are heading. We accept token payments.
+                                </p>
+                            </div>
+                            
+                               
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- End Section Partner -->
+
+    <!-- Section Join -->
+    <!-- <section class="join-now style-3" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="join-now__main center">
+                        <h6 class="sub-heading">Download</h6>
+                        <h3 class="heading">Get our App</h3>
+                        <p>Access our community platform, get personalized feedback, participate in live challenges, win awesome prizes and more.</p>
+                        <div class="join-now__button">
+                            <a class="btn-action style-3"><span>&nbsp;&nbsp;DOWNLOAD APP</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End Section Join -->
+
+    <!-- Section Faq -->
+    <!-- <section class="section-faq style-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block-text center">
+                        <h6 class="sub-heading">Questions</h6>
+                        <h3 class="heading">FAQ</h3>
+                    </div>
+                    
+                </div>
+                <div class="col-md-12">
+                    <div class="flat-accordion">
+                        <div class="flat-toggle active">
+                            <h6 class="toggle-title active">
+                                <span>01</span>What are the NFTs?
+                                <span class="icon"></span>
+                            </h6>
+                            <p class="toggle-content">As a creative agency we work with you to develop solutions to address your brand needs. That includes various aspects of brand planning and strategy, marketing and design.</p>
+                            
+                        </div>
+                        <div class="flat-toggle">
+                            <h6 class="toggle-title"><span>02</span>How do i get NFTs?<span class="icon"></span></h6>
+                            <p class="toggle-content">As a creative agency we work with you to develop solutions to address your brand needs. That includes various aspects of brand planning and strategy, marketing and design.</p>
+                        </div>
+                        <div class="flat-toggle">
+                            <h6 class="toggle-title"><span>03</span>How can we buy your NFTs?<span class="icon"></span></h6>
+                            <p class="toggle-content">As a creative agency we work with you to develop solutions to address your brand needs. That includes various aspects of brand planning and strategy, marketing and design.</p>
+                        </div>
+                        <div class="flat-toggle">
+                            <h6 class="toggle-title"><span>04</span>Who are the team behind the project?<span class="icon"></span></h6>
+                            <p class="toggle-content">As a creative agency we work with you to develop solutions to address your brand needs. That includes various aspects of brand planning and strategy, marketing and design.</p>
+                        </div>                                                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End Section Faq -->
+
+    <!-- Footer -->
+    <!-- <footer class="footer style-3">
+        <div class="footer__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="content-left">
+                            <h6>Contact</h6>
+                            <h3 class="fs-22">Get in touch</h3>
+                            <p class="fs-20">We are always open and we welcome and questions you have for our team. If you wish to get in touch, please fill out the form below. Someone from our team will get back to you shortly </p>
+                            <ul class="list-social">
+                                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                                <li><a href="#"><span class="icon-place"></span></a></li>
+                                <li><a href="#"><span class="icon-youtobe"></span></a></li>
+                                <li><a href="#"><span class="icon-tiktok"></span></a></li>
+                                <li><a href="#"><span class="icon-reddit"></span></a></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="content-right">
+                            <form>
+                                <div class="form row">
+                                    <div class="form-group col-md-6">
+                                        <label >Your Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter your name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label >Your Email</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail4"  placeholder="Enter your email">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <label >Your Message</label>
+                                        <textarea placeholder="Messages"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn-action style-3"><span>Send message</span></button>
+                                
+                              </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="assets/images/logo/logo02.png" alt="ICOLand">
+                    </div>
+                    <div class="col-md-6">
+                        <p>Themesflat 2022- ALL rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+    <!-- End Footer -->
+
+      <!-- Footer -->
+      <footer style="background-color:black;" class="footer style-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4">
+                        <div class="info">
+                            <img style="margin-top:-100px;" src="assets/images/logo-b.png" width="250" alt="ICOLand">
+                            <br><span style="color:white;" class="fs-11">
+                              FOLLOW US ON:
+                            </span>
+                            <ul class="list-social">
+                                <li><span class="icon-twitter"></span></li>
+                                <li><span class="icon-facebook"></span></li>
+                                <li><span class="icon-place"></span></li>
+                                <li><span class="icon-youtobe"></span></li>
+                                <li><span class="icon-tiktok"></span></li>
+                                <li><span class="icon-reddit"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6">
+                        <div class="footer-link s1">
+                               
+                            <!-- <h5 style="color:rgb(195, 0, 255)" class="title">Company</h5> -->
+                            <ul class="list-link">
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Refund Policy</a></li>
+                                <li><a href="#">Copyright Claim</a></li>
+                                <!-- <li><a href="#">Blog</a></li>
+                                <li><a href="#">Partners</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="footer-link s2">
+                            <!-- <h5 style="color:rgb(195, 0, 255)" class="title">Links</h5> -->
+                            <ul class="list-link">
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Careers </a></li>
+                                <!-- <li><a href="#">Login</a></li>
+                                <li><a href="#">Features</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6">
+                        <div class="footer-link s3">
+                            <!-- <h5 style="color:rgb(195, 0, 255)" class="title">Privacy</h5> -->
+                            <ul class="list-link">
+                                <li><a href="#">DOWNLOAD OUR APP</a></li>
+                                <li>
+                                    <img style="margin-left:25px;" src="https://d3qcdw78qm4j9k.cloudfront.net/public/web/images/play_store_button.svg" alt="">
+                                </li>
+                                <br>
+                                <li>
+                                    <img style="margin-left:25px;" src="https://d3qcdw78qm4j9k.cloudfront.net/public/web/images/app_store_button.svg" alt="">
+                                </li>
+                                <!-- <li><a href="#">Technology Policy</a></li>
+                                <li><a href="#">Development Agreement</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+
+
+    <a id="scroll-top"></a>
+
+    <script src="app/js/jquery.min.js"></script>
+    <script src="app/js/jquery.magnific-popup.min.js"></script>
+    <script src="app/js/jquery.easing.js"></script>
+    <script src="app/js/app.js"></script>
+    <script src="app/js/count-down.js"></script>
+    <script src="app/js/aos.js"></script>
+    <script src="app/js/chart.js"></script>
+    
+    <script src="app/js/swiper-bundle.min.js"></script>
+    <script src="app/js/swiper.js"></script>
+      <script src="app/js/mouse.js"></script>
+
+
+</body>
+
+<!-- Mirrored from surielementor.com/icolandhtml/home-music.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Sep 2022 14:10:45 GMT -->
+</html>
