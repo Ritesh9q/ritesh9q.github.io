@@ -1,0 +1,4327 @@
+@media (min-width: 14px) {
+    .tf__team_det_services .tf__services_text {
+        width: 65%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.99px) {
+
+    /*================================
+        HOME PAGE START
+    ================================*/
+    .tf__single_slider_text h1,
+    .tf__single_slider_text h1 span {
+        font-size: 55px
+    }
+
+    .tf__section_heading h3 {
+        font-size: 40px;
+    }
+
+    .tf__featured_service_single h3,
+    .tf__contact_info h3 {
+        font-size: 20px;
+    }
+
+    .tf_about_text_center_user_text {
+        width: 77%;
+    }
+
+    .tf_about_text_center_user_call p {
+        font-size: 15px;
+    }
+
+    .tf__about_img {
+        width: 450px;
+        height: 500px;
+    }
+
+    .tf__about_img .large_img_2,
+    .tf__about_img .large_img_3 {
+        width: 195px !important;
+        height: 150px !important;
+    }
+
+    .tf__single_categories h4 {
+        font-size: 20px;
+    }
+
+    .tf__services_img {
+        width: 190px;
+    }
+
+    .tf__services_text {
+        width: 65%;
+    }
+
+    .read_btn {
+        padding: 8px 25px;
+    }
+
+    .tf__work_single {
+        border: 20px solid var(--colorBlack);
+        width: 300px;
+        height: 300px;
+    }
+
+    .tf__work_single.first {
+        margin-left: 53px;
+    }
+
+    .tf__work_single.third {
+        margin-right: 53px;
+    }
+
+    .tf__gallery_filter button {
+        font-size: 15px;
+    }
+
+    .tf__gallery_item .gal_img_overlay {
+        width: 315px;
+    }
+
+    .tf__gallery_item:hover span {
+        left: 293px;
+    }
+
+    .tf__single_team_img {
+        height: 360px;
+    }
+
+    .tf__single_blog_img {
+        width: 240px;
+    }
+
+    .tf__single_blog_text {
+        width: 55%;
+    }
+
+    .tf__single_blog_text .title,
+    .tf__featured_blog_text .title {
+        font-size: 22px;
+    }
+
+    .tf__featured_blog_img {
+        height: 370px;
+    }
+
+    /*================================
+        HOME PAGE END
+    ================================*/
+
+    /*================================
+        404 PAGE START
+    ================================*/
+    .tf___404_text .img {
+        height: 340px;
+    }
+
+    /*================================
+        404 PAGE END
+    ================================*/
+
+    /*================================
+        ABOUT PAGE START
+    ================================*/
+    .tf__about_page_about_img .img_2 {
+        right: -40px;
+    }
+
+    .tf__about_page_about_img::after {
+        top: 90px;
+        right: 0px;
+    }
+
+    .tf__vission_img_small {
+        height: 130px;
+    }
+
+    .tf__award_text ul li,
+    .tf__award_text ol li {
+        width: 100%;
+    }
+
+    .tf__award_img {
+        height: 530px;
+        padding: 20px;
+        margin: 0;
+    }
+
+    /*================================
+        ABOUT PAGE END
+    ================================*/
+
+    /*================================
+        BLOG DETAILS END
+    ================================*/
+    .tf_service_det_btn_area ul li {
+        width: 47%;
+    }
+
+    .tf__single_review .review_text {
+        width: 84%;
+    }
+
+    .tf__single_review.reply .review_text {
+        width: 83%;
+    }
+
+    .tf__sidebar_blog ul li a .text {
+        width: 67%;
+    }
+
+    /*================================
+        BLOG DETAILS END
+    ================================*/
+
+    /*================================
+        LOGIN PAGE START
+    ================================*/
+    .tf__login_area {
+        padding: 30px;
+    }
+
+    .tf__login_area h3 {
+        font-size: 40px;
+    }
+
+    /*================================
+        LOGIN PAGE END
+    ================================*/
+
+    /*================================
+        PROCING PAGE START
+    ================================*/
+    .tf__pricing_list::after {
+        clip-path: polygon(0 20%, 50% 0, 100% 20%, 100% 47%, 50% 100%, 0 46%);
+    }
+
+    /*================================
+        PROCING PAGE END
+    ================================*/
+
+    /*================================
+        TEAM DETAILS START
+    ================================*/
+    .tf__team_det_services .tf__services_text {
+        width: 61%;
+    }
+
+    /*================================
+        TEAM DETAILS END
+    ================================*/
+
+    /*================================
+        HOME 2  START
+    ================================*/
+    .wsus__banner_2_text h1 {
+        font-size: 55px;
+    }
+
+    .tf__future_service_single_2_header span {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+    }
+
+    .tf__future_service_single_2_header h3 {
+        font-size: 20px;
+    }
+
+    .tf__future_service_single_2 p {
+        font-size: 15px;
+    }
+
+    .tf__work_single_2 p {
+        width: 270px;
+        height: 270px;
+        padding: 30px;
+    }
+
+    .tf__work_single_2 p::after {
+        width: 225px;
+        height: 199px;
+        bottom: -60px;
+        right: -90px;
+    }
+
+    .tf__gallery_item_2 {
+        height: 380px;
+    }
+
+    /*================================
+        HOME 2  END
+    ================================*/
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.99px) {
+
+    /*================================
+        HOME PAGE START
+    ================================*/
+    .tf__topbar_left li a,
+    .tf__topbar_left li p {
+        margin-right: 15px;
+    }
+
+    .main_menu .navbar-nav .nav-item .nav-link {
+        padding: 0px 10px;
+    }
+
+    .tf__single_slider_text h1,
+    .tf__single_slider_text h1 span {
+        font-size: 50px;
+    }
+
+    .tf__about_img {
+        width: auto;
+        height: 450px;
+    }
+
+    .tf__about_img .large_img_2,
+    .tf__about_img .large_img_3 {
+        width: 170px !important;
+        height: 140px !important;
+    }
+
+    .tf_about_text_center_user_text {
+        width: 74%;
+    }
+
+    .tf_about_text_center_user_call p {
+        width: 78%;
+    }
+
+    .tf__services_img {
+        width: 170px;
+        height: 235px;
+    }
+
+    .tf__services_text {
+        width: 62%;
+        padding: 15px;
+    }
+
+    .tf__services_text p {
+        margin: 9px 0px 14px 0px;
+    }
+
+    .tf__services_text ul {
+        margin-bottom: 15px;
+    }
+
+    .tf__services_item {
+        padding: 0;
+    }
+
+    .read_btn {
+        padding: 8px 20px;
+        font-size: 13px;
+    }
+
+    .tf__services_btn_area p {
+        font-size: 13px;
+    }
+
+    .tf__why_choose_img .large_img {
+        width: 400px;
+    }
+
+    .tf__why_choose_img .small_img {
+        width: 330px;
+        height: 250px;
+    }
+
+    .tf__why_choose_img .small_img::after {
+        bottom: 25px;
+        left: 25px;
+    }
+
+    .tf__why_choose_img .venobox {
+        top: 290px;
+        left: 10px;
+    }
+
+    .tf__work_single {
+        border: 15px solid var(--colorBlack);
+        width: 245px;
+        height: 245px;
+    }
+
+    .tf__work_single.first {
+        margin-left: 47px;
+    }
+
+    .tf__work_single.third {
+        margin-right: 47px;
+    }
+
+    .tf__work_text_area::after {
+        background-size: contain;
+    }
+
+    .tf__gallery_item {
+        height: 280px;
+    }
+
+    .tf__gallery_item .gal_img_overlay h4 {
+        font-size: 18px;
+    }
+
+    .tf__gallery_item .gal_img_overlay {
+        width: 250px;
+        padding: 45px 0px 15px 15px;
+    }
+
+    .tf__gallery_item:hover span {
+        left: 230px;
+    }
+
+    .tf__gallery_item .venobox span {
+        bottom: 13px;
+    }
+
+    .tf__section_heading h3 {
+        font-size: 35px;
+    }
+
+    .tf__gallery {
+        margin-top: 80px !important;
+    }
+
+    .tf__gallery_filter button {
+        font-size: 14px;
+        padding: 5px 13px;
+        margin-left: 10px;
+    }
+
+    .vbox-content {
+        max-width: 700px;
+        max-height: 450px;
+    }
+
+    .tf__single_counter_center {
+        width: 180px;
+        height: 180px;
+    }
+
+    .tf__single_counter_center h2 {
+        width: 141px;
+        height: 141px;
+        line-height: 143px;
+    }
+
+    .tf__single_counter_center::after {
+        left: 41%;
+    }
+
+    .tf__single_counter_center::before {
+        left: 57%;
+    }
+
+    .tf__single_counter p {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .tf__single_team_img {
+        height: 290px;
+    }
+
+    .tf__single_team_text .title {
+        font-size: 20px;
+    }
+
+    .tf__single_testimonial_text .title {
+        font-size: 20px;
+    }
+
+    .tf__single_blog_img {
+        width: 200px;
+        height: 270px;
+    }
+
+    .tf__single_blog_text {
+        width: 55%;
+        padding: 0px 10px;
+    }
+
+    .tf__single_blog_text p {
+        -webkit-line-clamp: 2;
+    }
+
+    .tf__single_blog_text .title {
+        font-size: 20px;
+    }
+
+    .tf__featured_blog_text {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .tf__featured_blog_text .title {
+        font-size: 20px;
+    }
+
+    .tf__featured_blog_img {
+        height: 376px;
+    }
+
+    /*================================
+        HOME PAGE END
+    ================================*/
+
+    /*================================
+        404 PAGE START
+    ================================*/
+    .tf___404 {
+        padding-top: 140px;
+    }
+
+    .tf___404_text .img {
+        width: 450px;
+        height: 240px;
+        margin: 0 auto;
+    }
+
+    /*================================
+        404 PAGE END
+    ================================*/
+
+    /*================================
+        ABOUT PAGE START
+    ================================*/
+    .tf__breadcrumb {
+        margin-top: 140px;
+    }
+
+    .tf__breadcrumb_overlay {
+        padding: 125px 0px 130px 0px;
+    }
+
+    .tf__breadcrumb_text h1 {
+        font-size: 55px;
+    }
+
+    .tf__about_page_welcome_img {
+        padding-right: 0;
+    }
+
+    .tf__about_page_about_img p {
+        bottom: -55px;
+    }
+
+    .tf__about_page_welcome_img .call_area {
+        padding: 15px;
+        top: auto;
+        bottom: 20px;
+        transform: translate(0);
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+        width: 80%;
+    }
+
+    .tf__about_page_welcome_img .call p {
+        width: 75%;
+    }
+
+    .tf_about_2_text ul li,
+    .tf_about_2_text ol li,
+    .tf__about_page_welcome_text ul li,
+    .tf__about_page_welcome_text ol li,
+    .tf__services_details_text ul li,
+    .tf__services_details_text ol li {
+        font-size: 14px;
+    }
+
+    .tf_about_2_text ul li::after,
+    .tf_about_2_text ol li::after,
+    .tf__about_page_welcome_text ul li::after,
+    .tf__about_page_welcome_text ol li::after,
+    .tf__services_details_text ul li::after,
+    .tf__services_details_text ol li::after {
+        top: 0px;
+    }
+
+    .tf__about_page_welcome_img .call p span {
+        display: inline-block;
+        font-weight: 600;
+    }
+
+    .tf__about_page_welcome_text h2,
+    .tf__about_page_welcome_text h3,
+    .tf__about_page_welcome_text h4,
+    .tf__about_page_welcome_text h5 {
+        font-size: 35px;
+    }
+
+    .tf__about_page_about_img .img_1 {
+        height: 500px;
+        margin-bottom: 35px;
+        width: 450px;
+    }
+
+    .tf__about_page_about_img .img_2 {
+        width: 300px;
+        height: 230px;
+    }
+
+    .tf__about_page_about_text a {
+        margin-top: 20px;
+    }
+
+    .tf__mission_text h3 {
+        font-size: 35px;
+    }
+
+    .tf__mission_video_area {
+        height: 400px;
+        margin-bottom: 270px;
+    }
+
+    .tf__mission_video {
+        bottom: -220px;
+        height: 450px;
+    }
+
+    .tf__vission_img_small {
+        height: 100px;
+    }
+
+    .tf__vission_img_large {
+        height: 480px;
+    }
+
+    .tf_partnership h2 {
+        font-size: 35px;
+    }
+
+    .tf_partner_single {
+        height: 350px;
+    }
+
+    .tf_partner_overlay h3 {
+        font-size: 20px;
+    }
+
+    .tf__award_img {
+        height: 370px;
+    }
+
+    .tf__award_img .award_small_img {
+        width: 250px;
+        height: 180px;
+    }
+
+    .tf__award_text ul li,
+    .tf__award_text ol li {
+        width: 100%;
+    }
+
+    /*================================
+        ABOUT PAGE END
+    ================================*/
+
+    /*================================
+        BLOG DETAILS START
+    ================================*/
+    .tf__blog_det_video_img {
+        height: 330px;
+    }
+
+    .tag_list {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .tf_service_det_btn_area ul li {
+        width: 48%;
+    }
+
+    .tf_service_det_btn_area ul li .text {
+        max-width: 180px;
+    }
+
+    .tf__single_review .review_text {
+        width: 81%;
+    }
+
+    .tf__single_review.reply .review_text {
+        width: 80%;
+    }
+
+    .tf__sidebar_blog ul li a .img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .tf__sidebar_blog ul li a .text {
+        width: 67%;
+    }
+
+    .tf__sidebar_blog ul li a .text span {
+        font-size: 14px;
+    }
+
+    .sidebar_item {
+        padding: 20px;
+    }
+
+    .tf__sidebar_blog ul li a .text p {
+        font-size: 14px;
+    }
+
+    .tf__sidebar_mail h5 {
+        font-size: 15px;
+    }
+
+    .tf__sidebar_category ul li a {
+        font-size: 14px;
+    }
+
+    .tf__sidebar_tags ul li a {
+        font-size: 14px;
+    }
+
+    .tf__sidebar_link ul li a {
+        font-size: 14px;
+    }
+
+    .sidebar_item h3 {
+        font-size: 20px;
+    }
+
+    /*================================
+        BLOG DETAILS END
+    ================================*/
+
+    /*================================
+        COMMING SOON START
+    ================================*/
+    .tf__comming_soon_text .simply-amount {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 35px;
+        margin: 0px 10px;
+    }
+
+    .tf__comming_soon_text .simply-word {
+        font-size: 18px;
+    }
+
+    .tf__comming_form_area .overlay {
+        padding: 40px;
+    }
+
+    .tf__comming_form_area form button {
+        padding: 0px 30px;
+    }
+
+    /*================================
+        COMMING SOON END
+    ================================*/
+
+    /*================================
+        DASHBOARD PAGE START
+    ================================*/
+    .tf__dashboard_sidebar h3 {
+        font-size: 18px;
+    }
+
+    .tf__dashboard_sidebar {
+        padding: 15px;
+    }
+
+    .tf_personal_info,
+    .tf_personal_info_edit {
+        padding: 15px;
+    }
+
+    .tf__dashboard_wishlist .tf__services_text {
+        width: 66%;
+    }
+
+    /*================================
+        DASHBOARD PAGE END
+    ================================*/
+
+    /*================================
+        FAQ PAGE START
+    ================================*/
+    .tf__faq_img {
+        margin-right: 25px;
+    }
+
+    .tf__faq_img .img_1 {
+        width: 100%;
+        height: 520px;
+    }
+
+    .tf__faq_img .img_2 {
+        right: -25px;
+    }
+
+    .tf__faq_text h2 {
+        font-size: 30px;
+    }
+
+    /*================================
+        FAQ PAGE END
+    ================================*/
+
+    /*================================
+        LOGIN PAGE START
+    ================================*/
+    .tf__login_area {
+        padding: 30px;
+    }
+
+    .tf__login_area h3 {
+        font-size: 40px;
+    }
+
+    /*================================
+        LOGIN PAGE END
+    ================================*/
+
+    /*================================
+        PROCING PAGE START
+    ================================*/
+    .tf__pricing_list::after {
+        width: 290px;
+        clip-path: polygon(0 20%, 50% 0, 100% 20%, 100% 52%, 50% 100%, 0 52%);
+    }
+
+    /*================================
+        PROCING PAGE END
+    ================================*/
+
+    /*================================
+        PRIVACY POLICY START
+    ================================*/
+    .tf__terms_condition_text h3 {
+        font-size: 35px;
+    }
+
+    /*================================
+        PRIVACY POLICY END
+    ================================*/
+
+    /*================================
+        TEAM DETAILS START
+    ================================*/
+    .tf__team_Statictics h2::after {
+        width: 73px;
+    }
+
+    .tf__team_Statictics_counter {
+        margin-bottom: 25px;
+    }
+
+    .tf__team_skills_img {
+        height: 350px;
+        width: 400px;
+        margin-top: 10px;
+    }
+
+    .tf__team_skills_img::after {
+        width: 100%;
+        height: 100%;
+        bottom: -13px;
+        right: -13px;
+    }
+
+    .tf__team_details_text .tf__service_review_input {
+        margin-bottom: 0;
+    }
+
+    .tf__team_details_text h3 {
+        font-size: 25px;
+    }
+
+    .tf__team_det_services .tf__services_text {
+        width: 62%;
+    }
+
+    /*================================
+        TEAM DETAILS END
+    ================================*/
+
+    /*================================
+        HOME PAGE 2 START
+    ================================*/
+    .wsus__banner_2_text h1 {
+        font-size: 55px;
+    }
+
+    .tf__single_service_2 {
+        height: 450px;
+    }
+
+    .tf__single_service_2_img a {
+        top: 175px;
+    }
+
+    .tf__single_service_2_img::after {
+        bottom: -90px;
+        transform: rotate(189deg);
+        -webkit-transform: rotate(189deg);
+        -moz-transform: rotate(189deg);
+        -ms-transform: rotate(189deg);
+        -o-transform: rotate(189deg);
+    }
+
+    .tf__single_counter_2_area {
+        width: 200px;
+        height: 200px;
+        line-height: 220px;
+    }
+
+    .tf__single_counter_2 p {
+        font-size: 18px;
+    }
+
+    .tf__why_choose_2_img .img_1 {
+        height: 300px;
+        margin-left: 43px;
+    }
+
+    .tf__why_choose_2_img .img_2 {
+        height: 120px;
+    }
+
+    .tf__work_single_2 p {
+        width: 225px;
+        height: 225px;
+        padding: 30px;
+    }
+
+    .tf__work_single_2 p span {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        border: 5px solid var(--colorWhite);
+    }
+
+    .tf__work_single_2 p::after {
+        width: 170px;
+        height: 150px;
+        bottom: -48px;
+        right: -70px;
+    }
+
+    .tf__category_2_single_text {
+        width: auto;
+        height: 347px;
+    }
+
+    .tf__single_team_2_img {
+        height: 280px;
+    }
+
+    .tf__single_team_2 {
+        padding: 15px;
+    }
+
+    .tf__single_team_2_text h3 {
+        font-size: 18px;
+    }
+
+    .tf__footer_2 .tf__footer_logo_area ul li a,
+    .tf__footer_2 .tf__footer_link p i {
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    /*================================
+        HOME PAGE 2 END
+    ================================*/
+}
+
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+
+    /*================================
+        HOME PAGE START
+    ================================*/
+    /* topbar start */
+    .tf__topbar_left {
+        justify-content: center !important;
+    }
+
+    .tf__topbar_left li a i,
+    .tf__topbar_left li p i {
+        width: 25px;
+        height: 25px;
+        line-height: 27px;
+        font-size: 13px;
+    }
+
+    .tf__topbar_right {
+        display: none !important;
+    }
+
+    /* topbar end */
+
+    /* menu start */
+    .main_menu {
+        height: 75px;
+        border-bottom: 1px solid var(--colorPrimary);
+    }
+
+    .main_menu .navbar-brand {
+        max-width: 120px;
+    }
+
+    .main_menu .navbar-toggler {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        padding: 0;
+        background: var(--colorPrimary);
+        color: var(--colorWhite);
+        border: none;
+        border-radius: 2px;
+        box-shadow: none !important;
+    }
+
+    .main_menu .container {
+        padding-top: 4px;
+        padding-bottom: 7px;
+    }
+
+    .main_menu .navbar-nav {
+        background: var(--colorWhite);
+        border-top: 1px solid var(--colorPrimary);
+        margin-top: 12px !important;
+    }
+
+    .main_menu .navbar-nav .nav-item .nav-link {
+        padding: 0px;
+        line-height: 55px;
+        text-align: center;
+    }
+
+    .main_menu .menu_right {
+        background: var(--colorWhite);
+        border-bottom: 1px solid var(--colorPrimary);
+        padding-bottom: 20px;
+        justify-content: center;
+    }
+
+    .main_menu .tf__droap_menu {
+        max-height: 240px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+
+    .tf__search_form form {
+        width: 70%;
+    }
+
+    /* menu end */
+
+    /* banner start */
+    .tf__banner {
+        height: auto;
+        padding-top: 124px;
+        overflow: hidden;
+    }
+
+    .tf__single_slider_text h1 {
+        font-size: 40px;
+    }
+
+    .tf__single_slider_text h1 span {
+        font-size: 40px;
+    }
+
+    .tf__single_slider_text p {
+        font-size: 16px;
+        margin-bottom: 33px;
+    }
+
+    .tf__single_slider_text ul li {
+        margin-bottom: 15px;
+    }
+
+    .tf__single_slider_text {
+        margin-top: 115px;
+        margin-bottom: 105px;
+        padding: 0px 10px;
+    }
+
+    /* banner end */
+
+    /* future service start */
+    .tf__section_heading h3 {
+        font-size: 35px;
+    }
+
+    .related_service_slider .nextArrow,
+    .related_service_slider .prevArrow,
+    .testi_slider .nextArrow,
+    .testi_slider .prevArrow,
+    .futured_slider .nextArrow,
+    .futured_slider .prevArrow {
+        top: -110px;
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+        font-size: 14px;
+    }
+
+    .related_service_slider .prevArrow,
+    .testi_slider .prevArrow,
+    .futured_slider .prevArrow {
+        right: 50px;
+    }
+
+    .tf__featured_service_single h3,
+    .tf__contact_info h3 {
+        font-size: 20px;
+    }
+
+    .tf__featured_service_single span,
+    .tf__contact_info span {
+        width: 76px;
+        height: 86px;
+        line-height: 86px;
+        font-size: 35px;
+    }
+
+    .tf__featured_service_single,
+    .tf__contact_info {
+        padding-top: 80px;
+    }
+
+    /* future service end */
+
+    /* about start */
+    .tf__about_text {
+        padding-right: 0;
+        margin-bottom: 25px;
+    }
+
+    .tf_about_text_center_user_call p a {
+        font-size: 14px;
+    }
+
+    .tf__about_img {
+        margin: 0;
+        width: 450px;
+        height: 450px;
+        float: left;
+        margin-bottom: 40px;
+    }
+
+    .tf__about_img .large_img_2,
+    .tf__about_img .large_img_3 {
+        width: 195px !important;
+        height: 150px !important;
+        bottom: -40px;
+    }
+
+    .tf__about_img .venobox,
+    .tf__why_choose_img .venobox {
+        top: 90px;
+        left: 60px;
+        transform: none;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .tf__about_img .venobox::after,
+    .tf__why_choose_img .venobox::after {
+        width: 60px;
+        height: 60px;
+        border: 3px solid var(--colorPrimary);
+        top: -5px;
+        left: -5px;
+    }
+
+    /* about end */
+
+    /* service start */
+    .tf__services_text {
+        width: 69%;
+    }
+
+    .tf__blog_2 .common_btn,
+    .tf__testimonial_2 .common_btn,
+    .tf__team_2 .common_btn,
+    .tf__services_2 .common_btn,
+    .tf__services .common_btn,
+    .tf__team .common_btn,
+    .tf__blog .common_btn {
+        top: 16px;
+    }
+
+    /* service end */
+
+    /* why choose start */
+    .tf__why_choose_text {
+        margin-bottom: 25px;
+    }
+
+    .tf__why_choose_img .large_img {
+        width: 370px;
+        height: 350px;
+    }
+
+    .tf__why_choose_img .small_img {
+        width: 270px;
+        height: 220px;
+    }
+
+    .tf__why_choose_img .small_img::after {
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .tf__work_text_area {
+        padding-bottom: 35px;
+    }
+
+    /* .tf__why_choose .tf__section_heading {
+        margin-bottom: 50px !important;
+    } */
+
+    /* why choose end */
+
+    /* work start */
+    .tf__work_single {
+        border: 15px solid var(--colorBlack);
+        width: 200px;
+        height: 200px;
+        margin: 0 auto !important;
+    }
+
+    .tf__work_single h4 {
+        font-size: 18px;
+    }
+
+    .tf__work_text_area::after {
+        display: none;
+    }
+
+    .tf__work .tf__section_heading {
+        margin-bottom: 55px !important;
+    }
+
+    /* work end */
+
+    /* gallery start */
+    .tf__gallery_filter {
+        text-align: center;
+    }
+
+    .tf__gallery_item {
+        height: 300px;
+    }
+
+    .tf__gallery_item .gal_img_overlay {
+        width: 90%;
+        padding: 40px 0px 10px 10px;
+    }
+
+    .tf__gallery_item .gal_img_overlay h4 {
+        font-size: 18px;
+    }
+
+    .tf__gallery_item:hover span {
+        left: 83%;
+    }
+
+    .tf__gallery_item .venobox span {
+        bottom: 35px;
+    }
+
+    .tf__gallery_filter button {
+        margin-top: 3px;
+    }
+
+    .vbox-content {
+        max-width: 85%;
+    }
+
+    /* gallery end */
+
+    /* counter start */
+    .tf__counter {
+        margin-bottom: -20px;
+    }
+
+    .tf__single_counter p {
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    /* counter end */
+
+    /* team start */
+    .tf__single_team_img {
+        height: 350px;
+    }
+
+    .tf__single_team_text .title {
+        font-size: 18px;
+    }
+
+    /* team end */
+
+    /* testimonial start */
+    .testi_slider .nextArrow,
+    .testi_slider .prevArrow {
+        top: -102px;
+    }
+
+    .tf__single_testimonial_text .title {
+        font-size: 20px;
+    }
+
+    /* testimonial end */
+
+    /* blog start */
+    .tf__single_blog_text {
+        width: 63%;
+    }
+
+    .tf__single_blog_text ul li {
+        margin-bottom: 5px;
+    }
+
+    .tf__single_blog_text .title {
+        font-size: 19px;
+    }
+
+    /* blog end */
+
+    /* footer start */
+    .tf__footer_subscribe {
+        padding: 40px;
+        border-radius: 10px;
+        top: -60px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    .tf__footer_subscribe_text h4 {
+        text-align: center;
+    }
+
+    .tf__footer_subscribe_text p {
+        margin: 10px 0px 10px 0px;
+        text-align: center;
+    }
+
+    .tf__footer_subscribe_form button {
+        padding: 7px 20px;
+    }
+
+    .tf__footer_subscribe_form input {
+        padding: 12px 20px;
+    }
+
+    .tf__footer_logo_area .footer_logo {
+        max-width: 150px;
+    }
+
+    .tf__footer_logo_area {
+        margin-bottom: 40px;
+    }
+
+    .tf__footer_link h4 {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .tf__footer_link {
+        margin-bottom: 40px;
+    }
+
+    .tf__footer .md_padding {
+        padding-bottom: 45px !important;
+    }
+
+    /* footer end */
+    /*================================
+        HOME PAGE END
+    ================================*/
+
+    /*================================
+        404 PAGE START
+    ================================*/
+    .tf___404 {
+        padding-top: 75px;
+    }
+
+    .tf___404_text .img {
+        width: 450px;
+        height: 240px;
+        margin: 0 auto;
+    }
+
+    /*================================
+        404 PAGE END
+    ================================*/
+
+    /*================================
+        ABOUT PAGE START
+    ================================*/
+    .tf__breadcrumb {
+        margin-top: 124px;
+    }
+
+    .tf__breadcrumb_text h1 {
+        font-size: 45px;
+    }
+
+    .tf__about_page_welcome_img {
+        height: 500px;
+        padding-right: 0;
+        width: 500px;
+        margin-bottom: 20px;
+    }
+
+    .tf__about_page_welcome_img .call_area {
+        padding: 15px;
+        top: auto;
+        bottom: 20px;
+        transform: translate(0);
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+        width: 80%;
+    }
+
+    .tf__about_page_welcome_img .call p {
+        width: 75%;
+    }
+
+    .tf__about_page_welcome_img .call p span {
+        display: inline-block;
+        font-weight: 600;
+    }
+
+    .tf__about_page_welcome_text h2,
+    .tf__about_page_welcome_text h3,
+    .tf__about_page_welcome_text h4,
+    .tf__about_page_welcome_text h5 {
+        font-size: 35px;
+    }
+
+    .tf__about_page_about_img .img_1 {
+        height: 500px;
+        margin-bottom: 35px;
+        width: 450px;
+    }
+
+    .tf__about_page_about_img .img_2 {
+        width: 300px;
+        height: 230px;
+    }
+
+    .tf__about_page_about_text a {
+        margin-top: 20px;
+    }
+
+    .tf__mission_text h3 {
+        font-size: 35px;
+    }
+
+    .tf__mission_video_area {
+        height: 230px;
+        margin-bottom: 250px;
+    }
+
+    .tf__mission_video {
+        padding: 10px;
+        bottom: -130px;
+        height: 350px;
+    }
+
+    .tf__vission_img_large {
+        height: 400px;
+        margin-top: 25px;
+    }
+
+    .tf_partnership h2 {
+        font-size: 35px;
+    }
+
+    .tf_partner_single {
+        height: 350px;
+    }
+
+    .tf_partner_overlay h3 {
+        font-size: 20px;
+    }
+
+    .tf__award_img {
+        height: 370px;
+    }
+
+    .tf__award_img .award_small_img {
+        width: 250px;
+        height: 180px;
+    }
+
+    .tf__award_text h4 {
+        font-size: 35px;
+        margin-top: 25px;
+    }
+
+    .tf__award_text ul li,
+    .tf__award_text ol li {
+        width: 100%;
+    }
+
+    .tf__about_page_about_text {
+        margin-top: 55px;
+    }
+
+    /*================================
+        ABOUT PAGE END
+    ================================*/
+
+    /*================================
+        BLOG DETAILS START
+    ================================*/
+    .tf__blog_details_text h1,
+    .tf__blog_details_text h2 {
+        font-size: 34px;
+    }
+
+    .tf__blog_det_video_img {
+        height: 370px;
+    }
+
+    .tf_service_det_btn_area ul li {
+        width: 46%;
+    }
+
+    .tf__service_review_list h3,
+    .tf__service_review_input h3 {
+        font-size: 26px;
+    }
+
+    .tf__single_review .review_text {
+        width: 83%;
+    }
+
+    .tf__single_review.reply .review_text {
+        width: 82%;
+    }
+
+    .tf__service_review_input {
+        margin-bottom: 25px;
+    }
+
+    .tf__sidebar_blog ul li a .text {
+        width: 83%;
+    }
+
+    .tf__sidebar_mail .img {
+        height: 280px;
+    }
+
+    .tf__blog_details_text h4 {
+        font-size: 25px;
+    }
+
+    /*================================
+        BLOG DETAILS END
+    ================================*/
+
+    /*================================
+        COMMING SOON START
+    ================================*/
+    .tf__comming_soon_text .simply-amount {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 35px;
+        margin: 0px 10px;
+    }
+
+    .tf__comming_soon_text .simply-word {
+        font-size: 18px;
+    }
+
+    .tf__comming_form_area .overlay {
+        padding: 30px;
+    }
+
+    .tf__comming_form_area form button {
+        padding: 0px 30px;
+    }
+
+    /*================================
+        COMMING SOON END
+    ================================*/
+
+    /*================================
+        FAQ PAGE START
+    ================================*/
+    .tf__faq_text h2 {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    /*================================
+        FAQ PAGE END
+    ================================*/
+
+    /*================================
+        LOGIN PAGE START
+    ================================*/
+    .tf__login_area {
+        padding: 30px;
+    }
+
+    .tf__login_area h3 {
+        font-size: 40px;
+    }
+
+    /*================================
+        LOGIN PAGE END
+    ================================*/
+
+    /*================================
+        PROCING PAGE START
+    ================================*/
+    .tf__single_pricing_header .text h3 {
+        font-size: 23px;
+    }
+
+    .tf__pricing_list::after {
+        width: 240px;
+        clip-path: polygon(0 20%, 50% 0, 100% 20%, 100% 47%, 50% 100%, 0 47%);
+    }
+
+    .tf__single_pricing_header .text h5 {
+        font-size: 18px;
+    }
+
+    .tf__single_pricing_header .text h4 {
+        font-size: 20px;
+    }
+
+    .tf___pricing_support h3 {
+        font-size: 35px;
+    }
+
+    .tf___pricing_support h4 {
+        font-size: 25px;
+    }
+
+    /*================================
+        PROCING PAGE END
+    ================================*/
+
+    /*================================
+        PRIVACY POLICY START
+    ================================*/
+    .tf__terms_condition_text h3 {
+        font-size: 35px;
+    }
+
+    /*================================
+        PRIVACY POLICY END
+    ================================*/
+
+    /*================================
+        TEAM DETAILS START
+    ================================*/
+    .tf__team_sidebar .img {
+        height: 530px;
+    }
+
+    .tf__team_sidebar {
+        margin-bottom: 25px;
+    }
+
+    .tf__team_Statictics h2::after {
+        width: 73px;
+    }
+
+    .tf__team_Statictics_counter {
+        margin-bottom: 25px;
+    }
+
+    .tf__team_skills_img {
+        height: 350px;
+        width: 400px;
+        margin-top: 10px;
+    }
+
+    .tf__team_skills_img::after {
+        width: 100%;
+        height: 100%;
+        bottom: -13px;
+        right: -13px;
+    }
+
+    .tf__team_details_text .tf__service_review_input {
+        margin-bottom: 0;
+    }
+
+    .tf__team_details_text h3 {
+        font-size: 25px;
+    }
+
+    /*================================
+        TEAM DETAILS END
+    ================================*/
+
+    /*================================
+        HOME PAGE 2 START
+    ================================*/
+    .main_menu_2 .navbar-nav .nav-item .nav-link {
+        color: var(--colorBlack);
+    }
+
+    .wsus__banner_2 {
+        height: auto;
+        padding: 110px 0px 120px 0px;
+    }
+
+    .wsus__banner_2_text h1 {
+        font-size: 50px;
+    }
+
+    .wsus__banner_2 div {
+        height: auto;
+    }
+
+    .wsus__banner_2_text form ul li {
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1px solid #ffcbcb;
+    }
+
+    .wsus__banner_2_text form ul {
+        border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+    }
+
+    .wsus__banner_2_text form ul li button {
+        border-radius: 10px;
+        margin: 15px 0px 5px 0px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    .wsus__banner_2_text form ul li:last-child {
+        padding-left: 0;
+    }
+
+    .tf__future_service_single_2_header h3 {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .tf__section_heading_2 h3 {
+        font-size: 30px;
+    }
+
+    .tf_about_2_img .img_1 {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    .tf__category_2_single_text {
+        width: 290px;
+        height: 340px;
+    }
+
+    .tf_about_2_img .img_2 {
+        width: 200px;
+        height: 160px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .tf_about_2_img::after {
+        display: none;
+    }
+
+    .tf_about_2_img p {
+        font-size: 30px;
+        padding: 15px;
+        bottom: -10px;
+        right: auto;
+        left: 10px;
+    }
+
+    .tf_about_2_img p span {
+        font-size: 16px;
+    }
+
+    .tf__why_choose_2_text {
+        margin-bottom: 25px;
+    }
+
+    .tf__why_choose_2_img .img_1 {
+        height: 370px;
+        margin-left: 18px;
+    }
+
+    .tf__single_counter_2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .tf__why_choose_2_img .img_1 span::after {
+        width: 140px;
+    }
+
+    .tf__why_choose_2_img .img_1 span::before {
+        border-top: 35px solid #d98b7b;
+        border-right: 19px solid transparent;
+        top: -39px;
+        left: -89px;
+    }
+
+    .tf__why_choose_2_img .img_2 {
+        height: 170px;
+    }
+
+    .tf__gallery_item_2 .gal_img_overlay {
+        padding: 15px !important;
+    }
+
+    .tf__gallery_item_2 .venobox span {
+        bottom: 45px !important;
+    }
+
+    .tf__work_single_2 p {
+        width: 210px;
+        height: 210px;
+        padding: 30px;
+    }
+
+    .tf__work_single_2 p span {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        border: 7px solid var(--colorWhite);
+        font-size: 30px;
+    }
+
+    .tf__work_single_2 p::after {
+        display: none;
+    }
+
+    .tf__work_single_2 h4 {
+        margin-top: 15px;
+    }
+
+    .tf__single_team_2 {
+        padding: 10px 10px;
+    }
+
+    .tf__single_team_2_img {
+        height: 280px;
+    }
+
+    .tf__single_team_2_img::after {
+        height: 200px
+    }
+
+    .tf__single_team_2_text h3 {
+        font-size: 20px;
+    }
+
+    .tf__single_team_2_text p {
+        font-size: 16px
+    }
+
+    .tf__single_blog_2 {
+        padding: 10px;
+    }
+
+    .tf__single_blog_2_text .bloger_info {
+        width: 100%;
+    }
+
+    .tf__footer_download ul li a p {
+        margin-top: 0;
+    }
+
+    .tf__counter_2_overlay {
+        padding-bottom: 65px !important;
+    }
+
+    .md_margin {
+        margin-bottom: 0;
+    }
+
+    .home_2 .main_menu .navbar-nav {
+        margin-top: 10px !important;
+    }
+
+    /*================================
+        HOME PAGE 2 END
+    ================================*/
+}
+
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+
+    /*================================
+        HOME PAGE START
+    ================================*/
+    /* topbar start */
+    .tf__topbar_left {
+        justify-content: center !important;
+    }
+
+    .tf__topbar_left li:first-child {
+        display: none;
+    }
+
+    .tf__topbar_left li a i,
+    .tf__topbar_left li p i {
+        width: 25px;
+        height: 25px;
+        line-height: 27px;
+        font-size: 12px;
+    }
+
+    .tf__topbar_right {
+        display: none !important;
+    }
+
+    /* topbar end */
+
+    /* menu start */
+    .main_menu {
+        height: 75px;
+        border-bottom: 1px solid var(--colorPrimary);
+    }
+
+    .main_menu .navbar-brand {
+        max-width: 120px;
+    }
+
+    .main_menu .navbar-toggler {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        padding: 0;
+        background: var(--colorPrimary);
+        color: var(--colorWhite);
+        border: none;
+        border-radius: 2px;
+        box-shadow: none !important;
+    }
+
+    .main_menu .container {
+        padding-top: 4px;
+        padding-bottom: 7px;
+    }
+
+    .main_menu .navbar-nav {
+        background: var(--colorWhite);
+        border-top: 1px solid var(--colorPrimary);
+        margin-top: 12px !important;
+    }
+
+    .main_menu .navbar-nav .nav-item .nav-link {
+        padding: 0px;
+        line-height: 55px;
+        text-align: center;
+    }
+
+    .main_menu .menu_right {
+        background: var(--colorWhite);
+        border-bottom: 1px solid var(--colorPrimary);
+        padding-bottom: 20px;
+        justify-content: center;
+    }
+
+    .main_menu .tf__droap_menu {
+        max-height: 240px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+
+    .tf__search_form form {
+        width: 70%;
+    }
+
+    /* menu end */
+
+    /* banner start */
+    .tf__banner {
+        height: auto;
+        padding-top: 124px;
+        overflow: hidden;
+    }
+
+    .tf__single_slider_text h1 {
+        font-size: 40px;
+    }
+
+    .tf__single_slider_text h1 span {
+        font-size: 40px;
+    }
+
+    .tf__banner .slick-dots {
+        display: none !important;
+    }
+
+    .tf__single_slider_text p {
+        font-size: 16px;
+        margin-bottom: 33px;
+    }
+
+    .tf__single_slider_text ul li {
+        margin-bottom: 15px;
+    }
+
+    .tf__single_slider_text {
+        margin-top: 65px;
+        margin-bottom: 55px;
+        padding: 0px 10px;
+    }
+
+    /* banner end */
+
+    /* future service start */
+    .tf__section_heading h5 {
+        font-size: 18px;
+    }
+
+    .tf__section_heading h3 {
+        font-size: 30px;
+    }
+
+    .related_service_slider .nextArrow,
+    .related_service_slider .prevArrow,
+    .testi_slider .nextArrow,
+    .testi_slider .prevArrow,
+    .futured_slider .nextArrow,
+    .futured_slider .prevArrow {
+        top: -122px;
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+        font-size: 14px;
+    }
+
+    .related_service_slider .prevArrow,
+    .testi_slider .prevArrow,
+    .futured_slider .prevArrow {
+        right: 50px;
+    }
+
+    .tf__featured_service_single h3,
+    .tf__contact_info h3 {
+        font-size: 20px;
+    }
+
+    .tf__featured_service_single span,
+    .tf__contact_info span {
+        width: 76px;
+        height: 86px;
+        line-height: 86px;
+        font-size: 35px;
+    }
+
+    .tf__featured_service_single,
+    .tf__contact_info {
+        padding-top: 80px;
+    }
+
+    /* future service end */
+
+    /* about start */
+    .tf__about_text {
+        padding-right: 0;
+        margin-bottom: 25px;
+    }
+
+    .tf_about_text_center_user_call p a {
+        font-size: 14px;
+    }
+
+    .tf__about_img {
+        margin: 0;
+        width: 350px;
+        height: 350px;
+        float: left;
+        margin-bottom: 40px;
+    }
+
+    .tf__about_img .large_img_2,
+    .tf__about_img .large_img_3 {
+        width: 150px !important;
+        height: 120px !important;
+        bottom: -40px;
+    }
+
+    .tf__about_img .venobox,
+    .tf__why_choose_img .venobox {
+        top: 20px;
+        left: auto;
+        right: 20px;
+        transform: none;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .tf__about_img .venobox::after,
+    .tf__why_choose_img .venobox::after {
+        width: 60px;
+        height: 60px;
+        border: 3px solid var(--colorPrimary);
+        top: -5px;
+        left: -5px;
+    }
+
+    /* about end */
+
+
+    /* category start */
+    .tf__single_categories h4 {
+        font-size: 20px;
+    }
+
+    /* category end */
+
+    /* service start */
+    .tf__services_item {
+        padding: 0;
+    }
+
+    .tf__services_img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .tf__services_text {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .read_btn {
+        padding: 8px 20px;
+        font-size: 15px;
+    }
+
+    .tf__blog_2 .common_btn,
+    .tf__testimonial_2 .common_btn,
+    .tf__team_2 .common_btn,
+    .tf__services_2 .common_btn,
+    .tf__services .common_btn,
+    .tf__team .common_btn,
+    .tf__blog .common_btn {
+        position: static;
+        margin-top: 25px;
+    }
+
+    /* service end */
+
+    /* why choose start */
+    .tf__why_choose_text {
+        margin-bottom: 25px;
+    }
+
+    .tf__why_choose_img .large_img {
+        width: 290px;
+        height: 290px;
+    }
+
+    .tf__why_choose_img .small_img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .tf__why_choose_img .small_img::after {
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .tf__work_text_area {
+        padding-bottom: 35px;
+    }
+
+    /* why choose end */
+
+    /* work start */
+    .tf__work_text_area::after {
+        display: none;
+    }
+
+    .tf__work_single.first {
+        margin-left: 0;
+    }
+
+    .tf__work_single {
+        border: 20px solid var(--colorBlack);
+        width: 270px;
+        height: 270px;
+        margin: 25px auto 0 auto !important;
+    }
+
+    /* work end */
+
+    /* gallery start */
+    .tf__gallery_filter {
+        text-align: center;
+    }
+
+    .tf__gallery_filter button {
+        font-size: 13px;
+        padding: 5px 13px;
+        margin: 5px 5px 0px 5px;
+    }
+
+    .tf__gallery_item {
+        height: 250px;
+    }
+
+    .tf__gallery_item .gal_img_overlay {
+        width: 90%;
+        padding: 40px 0px 10px 10px;
+    }
+
+    .tf__gallery_item .gal_img_overlay h4 {
+        font-size: 18px;
+    }
+
+    .tf__gallery_item:hover span {
+        left: 83%;
+    }
+
+    .tf__gallery_item .venobox span {
+        bottom: 35px;
+    }
+
+    .vbox-content {
+        max-width: 85%;
+    }
+
+    /* gallery end */
+
+    /* team start */
+    .tf__single_team_img {
+        height: 250px;
+    }
+
+    .tf__single_team_text .title {
+        font-size: 18px;
+    }
+
+    /* team end */
+
+    /* testimonial start */
+    .testi_slider .nextArrow,
+    .testi_slider .prevArrow {
+        top: -102px;
+    }
+
+    .tf__single_testimonial_text .title {
+        font-size: 20px;
+    }
+
+    /* testimonial end */
+
+    /* blog start */
+    .tf__single_blog_img {
+        width: 100%;
+        height: 300px;
+        border-radius: 5px;
+    }
+
+
+    .tf__single_blog_text {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .tf__single_blog_text ul li {
+        margin-bottom: 5px;
+    }
+
+    .tf__single_blog_text .title {
+        font-size: 19px;
+    }
+
+    .tf__featured_blog_img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .tf__featured_blog_text {
+        width: 100%;
+        margin: 0;
+        padding: 25px;
+    }
+
+    .tf__featured_blog_text .title {
+        font-size: 19px;
+    }
+
+    /* blog end */
+
+    /* footer start */
+    .tf__footer_subscribe {
+        padding: 25px;
+        border-radius: 10px;
+        top: -60px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    .tf__footer_subscribe_text h4 {
+        text-align: center;
+    }
+
+    .tf__footer_subscribe_text p {
+        margin: 10px 0px 20px 0px;
+        text-align: center;
+    }
+
+    .tf__footer_subscribe_form button {
+        padding: 7px 20px;
+    }
+
+    .tf__footer_subscribe_form input {
+        padding: 12px 20px;
+    }
+
+    .tf__footer_logo_area .footer_logo {
+        max-width: 150px;
+    }
+
+    .tf__footer_logo_area p {
+        margin: 15px 0px;
+    }
+
+    .tf__footer_logo_area {
+        margin-bottom: 40px;
+    }
+
+    .tf__footer_link h4 {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .tf__footer_link {
+        margin-bottom: 40px;
+    }
+
+    .tf__footer_link p {
+        margin-top: 15px;
+    }
+
+    /* footer end */
+    /*================================
+        HOME PAGE END
+    ================================*/
+
+    /*================================
+        404 PAGE START
+    ================================*/
+    .tf___404 {
+        padding-top: 74px;
+    }
+
+    .tf___404_text .img {
+        width: 300px;
+        height: 160px;
+        margin: 0 auto;
+    }
+
+    .tf___404_text h4 {
+        font-size: 25px;
+    }
+
+    /*================================
+        404 PAGE END
+    ================================*/
+
+    /*================================
+        ABOUT PAGE START
+    ================================*/
+    .tf__breadcrumb {
+        margin-top: 124px;
+    }
+
+    .tf__breadcrumb_text h1 {
+        font-size: 35px;
+    }
+
+    .tf__breadcrumb_text ul li a {
+        font-size: 16px;
+    }
+
+    .tf__breadcrumb_overlay {
+        padding: 75px 0px 72px 0px;
+    }
+
+    .tf__about_page_welcome_img {
+        height: 500px;
+        padding-right: 0;
+        width: 450px;
+        margin-bottom: 20px;
+    }
+
+    .tf__about_page_welcome_img .call_area {
+        padding: 15px;
+        top: auto;
+        bottom: 20px;
+        transform: translate(0);
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+        width: 80%;
+    }
+
+    .tf__about_page_welcome_img .call p {
+        font-size: 14px;
+        width: 76%;
+    }
+
+    .tf__about_page_welcome_img .call p span {
+        display: inline-block;
+        font-weight: 600;
+    }
+
+    .tf__about_page_welcome_img .call_area h4 {
+        font-size: 14px;
+    }
+
+    .tf__about_page_welcome_img .call_area h4 span {
+        font-size: 13px;
+    }
+
+    .tf__about_page_welcome_text h2,
+    .tf__about_page_welcome_text h3,
+    .tf__about_page_welcome_text h4,
+    .tf__about_page_welcome_text h5 {
+        font-size: 30px;
+    }
+
+    .tf_about_2_text ul li,
+    .tf_about_2_text ol li,
+    .tf__about_page_welcome_text ul li,
+    .tf__about_page_welcome_text ol li,
+    .tf__services_details_text ul li,
+    .tf__services_details_text ol li {
+        width: 100%;
+    }
+
+    .tf__about_page_about_img .img_1 {
+        height: 400px;
+        margin-bottom: 35px;
+    }
+
+    .tf__about_page_about_img .img_2 {
+        width: 250px;
+        height: 200px;
+        bottom: 20px;
+    }
+
+    .tf__about_page_about_img p {
+        font-size: 30px;
+        bottom: -10px;
+    }
+
+    .tf__about_page_about_img p span {
+        font-size: 16px;
+    }
+
+    .tf__about_page_about_text a {
+        margin-top: 20px;
+    }
+
+    .tf__mission_text h3 {
+        font-size: 30px;
+    }
+
+    .tf__mission_video_area {
+        height: 230px;
+        margin-bottom: 190px;
+    }
+
+    .tf__mission_video {
+        padding: 10px;
+        bottom: -130px;
+        height: 290px;
+    }
+
+    .tf__vission_img_large {
+        height: 290px;
+        margin-top: 25px;
+    }
+
+    .tf_partnership h2 {
+        font-size: 30px;
+    }
+
+    .tf_partner_single {
+        height: 250px;
+    }
+
+    .tf_partner_overlay h3 {
+        font-size: 20px;
+    }
+
+    .tf__award_img {
+        height: 370px;
+    }
+
+    .tf__award_img .award_small_img {
+        width: 250px;
+        height: 180px;
+    }
+
+    .tf__award_text h4 {
+        font-size: 30px;
+        margin-top: 25px;
+    }
+
+    .tf__award_text ul li,
+    .tf__award_text ol li {
+        width: 100%;
+    }
+
+    /*================================
+        ABOUT PAGE END
+    ================================*/
+
+    /*================================
+        BLOG DETAILS START
+    ================================*/
+    .tf__blog_details_img {
+        height: 300px;
+    }
+
+    .tf__blog_details_text h1,
+    .tf__blog_details_text h2 {
+        font-size: 30px;
+    }
+
+    .tf__blog_details_text .quot_text p {
+        font-size: 16px;
+    }
+
+    .tf__blog_details_text h4 {
+        font-size: 25px;
+    }
+
+    .tf__blog_det_center_img {
+        height: 300px;
+    }
+
+    .tf__blog_det_video_img {
+        width: 400px;
+        height: 450px;
+    }
+
+    .tf_service_det_tag .tag_list {
+        margin-bottom: 30px;
+    }
+
+    .tf_service_det_btn_area ul li {
+        width: 50%;
+    }
+
+    .tf_service_det_btn_area ul li .text {
+        max-width: 140px;
+    }
+
+    .tf__service_review_list h3,
+    .tf__service_review_input h3 {
+        font-size: 25px;
+    }
+
+    .tf__single_review .review_text {
+        width: 77%;
+    }
+
+    .tf__single_review.reply .review_text {
+        width: 76%;
+    }
+
+    .tf__single_review .review_text h4 {
+        font-size: 18px;
+    }
+
+    .tf__single_review.reply {
+        padding-left: 20px;
+    }
+
+    .tf__service_review_input .form-check label {
+        max-width: 95%;
+    }
+
+    .sidebar_item h3 {
+        font-size: 20px;
+    }
+
+    .tf__sidebar_blog ul li a .text {
+        width: 77%;
+    }
+
+    .tf__sidebar_mail .img {
+        height: 250px;
+    }
+
+    /*================================
+        BLOG DETAILS END
+    ================================*/
+
+    /*================================
+        COMMING SOON START
+    ================================*/
+    .tf__comming_soon_text .simply-amount {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 35px;
+        margin: 0px 10px;
+    }
+
+    .tf__comming_soon_text .simply-word {
+        font-size: 18px;
+    }
+
+    .tf__comming_form_area .overlay {
+        padding: 30px;
+    }
+
+    .tf__comming_form_area h4 {
+        font-size: 25px;
+    }
+
+    .tf__comming_form_area form button {
+        padding: 0px 30px;
+    }
+
+    /*================================
+        COMMING SOON END
+    ================================*/
+
+    /*================================
+        CONTACT PAGE START
+    ================================*/
+    .tf__contact_map {
+        height: 350px;
+    }
+
+    .tf__contact_form h2 {
+        font-size: 25px;
+    }
+
+    /*================================
+        CONTACT PAGE END
+    ================================*/
+
+    /*================================
+        DASHBOARD PAGE START
+    ================================*/
+    .tf_dashboard_content {
+        margin-top: 25px;
+    }
+
+    .tf_dashboard_content h2 {
+        font-size: 25px;
+    }
+
+    /*================================
+        DASHBOARD PAGE END
+    ================================*/
+
+    /*================================
+        FAQ PAGE START
+    ================================*/
+    .tf__faq_img .img_1 {
+        width: 380px;
+        height: 450px;
+    }
+
+    .tf__faq_img .img_2 {
+        width: 200px;
+        height: 220px;
+    }
+
+    .tf__faq_text h2 {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .accordion-button {
+        font-size: 18px;
+    }
+
+    /*================================
+        FAQ PAGE END
+    ================================*/
+
+    /*================================
+        LOGIN PAGE START
+    ================================*/
+    .tf__login_area {
+        padding: 30px;
+    }
+
+    .tf__login_area h3 {
+        font-size: 30px;
+    }
+
+    .tf__login_area h5 {
+        font-size: 18px;
+    }
+
+    /*================================
+        LOGIN PAGE END
+    ================================*/
+
+    /*================================
+        PROCING PAGE START
+    ================================*/
+    .tf__single_pricing_header .text h3 {
+        font-size: 25px;
+    }
+
+    .tf__pricing_list::after {
+        width: 370px;
+        clip-path: polygon(0 20%, 50% 0, 100% 20%, 100% 48%, 50% 100%, 0 48%);
+    }
+
+    .tf__single_pricing_header .text h5 {
+        font-size: 18px;
+    }
+
+    .tf__single_pricing_header .text h4 {
+        font-size: 20px;
+    }
+
+    .tf___pricing_support h3 {
+        font-size: 35px;
+    }
+
+    .tf___pricing_support h4 {
+        font-size: 23px;
+    }
+
+    /*================================
+        PROCING PAGE END
+    ================================*/
+
+    /*================================
+        PRIVACY POLICY START
+    ================================*/
+    .tf__terms_condition_text h3 {
+        font-size: 30px;
+    }
+
+    /*================================
+        PRIVACY POLICY END
+    ================================*/
+
+    /*================================
+        SERVICE DETAILS START
+    ================================*/
+    .tf__services_details_img {
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    .tf__services_details_text h2 {
+        font-size: 30px;
+    }
+
+    .tf__services_details_text h3 {
+        font-size: 25px;
+    }
+
+    .tf__services_det_video {
+        height: 300px;
+    }
+
+    .tf__service_review_input {
+        margin-bottom: 25px;
+    }
+
+    /*================================
+        SERVICE DETAILS END
+    ================================*/
+
+    /*================================
+        TEAM DETAILS START
+    ================================*/
+    .tf__team_sidebar {
+        margin-bottom: 25px;
+    }
+
+    .tf__team_Statictics h2::after {
+        width: 73px;
+    }
+
+    .tf__team_Statictics_counter {
+        margin-bottom: 25px;
+    }
+
+    .tf__team_skills_img {
+        height: 350px;
+        width: 400px;
+        margin-top: 10px;
+    }
+
+    .tf__team_skills_img::after {
+        width: 100%;
+        height: 100%;
+        bottom: -13px;
+        right: -13px;
+    }
+
+    .tf__team_details_text .tf__service_review_input {
+        margin-bottom: 0;
+    }
+
+    .tf__team_details_text h3 {
+        font-size: 25px;
+    }
+
+    /*================================
+        TEAM DETAILS END
+    ================================*/
+
+    /*================================
+        HOME PAGE 2 START
+    ================================*/
+    .main_menu_2 .navbar-nav .nav-item .nav-link {
+        color: var(--colorBlack);
+    }
+
+    .wsus__banner_2 {
+        height: auto;
+        padding: 60px 0px 70px 0px;
+    }
+
+    .wsus__banner_2_text h1 {
+        font-size: 45px;
+    }
+
+    .wsus__banner_2 div {
+        height: auto;
+    }
+
+    .wsus__banner_2_text form ul li {
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1px solid #ffcbcb;
+    }
+
+    .wsus__banner_2_text form ul {
+        border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+    }
+
+    .wsus__banner_2_text form ul li button {
+        border-radius: 10px;
+        margin: 15px 0px 5px 0px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    .wsus__banner_2_text form ul li:last-child {
+        padding-left: 0;
+    }
+
+    .tf__section_heading_2 h3 {
+        font-size: 22px;
+    }
+
+    .tf_about_2_img .img_1 {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    .tf_about_2_img .img_2 {
+        width: 200px;
+        height: 160px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .tf_about_2_img::after {
+        display: none;
+    }
+
+    .tf_about_2_img p {
+        font-size: 30px;
+        padding: 15px;
+        bottom: -10px;
+        right: auto;
+        left: 10px;
+    }
+
+    .tf_about_2_img p span {
+        font-size: 16px;
+    }
+
+    .tf__why_choose_2_text {
+        margin-bottom: 25px;
+    }
+
+    .tf__why_choose_2_img .img_1 {
+        height: 330px;
+        margin-left: 18px;
+    }
+
+    .tf__single_counter_2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .tf__why_choose_2_img .img_1 span::after {
+        width: 140px;
+    }
+
+    .tf__why_choose_2_img .img_1 span::before {
+        border-top: 35px solid #d98b7b;
+        border-right: 19px solid transparent;
+        top: -39px;
+        left: -89px;
+    }
+
+    .tf__why_choose_2_img .img_2 {
+        height: 170px;
+    }
+
+    .tf__gallery_filter_2 button {
+        font-size: 13px;
+        padding: 5px 10px;
+        margin: 2px;
+    }
+
+    .tf__gallery_item_2 .gal_img_overlay {
+        padding: 15px !important;
+    }
+
+    .tf__gallery_item_2 .venobox span {
+        bottom: 45px !important;
+    }
+
+    .tf__work_single_2 p {
+        width: 220px;
+        height: 220px;
+        padding: 30px;
+    }
+
+    .tf__work_single_2 p span {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        border: 7px solid var(--colorWhite);
+        font-size: 30px;
+    }
+
+    .tf__work_single_2 p::after {
+        display: none;
+    }
+
+    .tf__work_single_2 h4 {
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+
+    .tf__single_team_2 {
+        padding: 10px 10px;
+    }
+
+    .tf__single_team_2_img {
+        height: 230px;
+    }
+
+    .tf__single_team_2_img::after {
+        height: 200px
+    }
+
+    .tf__single_team_2_text h3 {
+        font-size: 20px;
+    }
+
+    .tf__single_team_2_text p {
+        font-size: 16px
+    }
+
+    .tf__single_blog_2 {
+        padding: 10px;
+    }
+
+    .tf__single_blog_2_text .bloger_info {
+        width: 100%;
+    }
+
+    .tf__single_service_2_img::after {
+        width: 544px;
+        transform: rotate(185deg);
+        -webkit-transform: rotate(185deg);
+        -moz-transform: rotate(185deg);
+        -ms-transform: rotate(185deg);
+        -o-transform: rotate(185deg);
+    }
+
+    .tf__single_blog_2_img {
+        height: 330px;
+    }
+
+    .tf__footer_download ul li a p {
+        margin-top: 0;
+    }
+
+    .home_2 .main_menu .navbar-nav {
+        margin-top: 10px !important;
+    }
+
+    /*================================
+        HOME PAGE 2 END
+    ================================*/
+}
+
+
+@media (max-width: 575.99px) {
+
+    /*================================
+        HOME PAGE START
+    ================================*/
+    /* topbar start */
+    .tf__topbar_left {
+        justify-content: space-between;
+    }
+
+    .tf__topbar_left li:first-child {
+        display: none;
+    }
+
+    .tf__topbar_left li a,
+    .tf__topbar_left li p {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .tf__topbar_left li a i,
+    .tf__topbar_left li p i {
+        width: auto;
+        height: auto;
+        line-height: initial;
+        font-size: 12px;
+        background: none;
+    }
+
+    .tf__topbar_right {
+        display: none !important;
+    }
+
+    /* topbar end */
+
+    /* menu start */
+    .main_menu {
+        height: 75px;
+        border-bottom: 1px solid var(--colorPrimary);
+    }
+
+    .main_menu .navbar-brand {
+        max-width: 120px;
+        margin-left: 12px;
+    }
+
+    .main_menu .navbar-toggler {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        padding: 0;
+        background: var(--colorPrimary);
+        color: var(--colorWhite);
+        border: none;
+        border-radius: 2px;
+        margin-right: 12px;
+        box-shadow: none !important;
+    }
+
+    .main_menu .container {
+        padding: 4px 0px 8px 0px;
+    }
+
+    .main_menu .navbar-nav {
+        background: var(--colorWhite);
+        border-top: 1px solid var(--colorPrimary);
+        margin-top: 12px !important;
+    }
+
+    .main_menu .navbar-nav .nav-item .nav-link {
+        padding: 0px;
+        line-height: 55px;
+        text-align: center;
+    }
+
+    .main_menu .menu_right {
+        background: var(--colorWhite);
+        border-bottom: 1px solid var(--colorPrimary);
+        padding-bottom: 20px;
+        justify-content: center;
+    }
+
+    .main_menu .tf__droap_menu {
+        max-height: 240px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+
+    .tf__search_form form {
+        width: 90%;
+    }
+
+    /* menu end */
+
+    /* banner start */
+    .tf__banner {
+        height: auto;
+        padding-top: 124px;
+        overflow: hidden;
+    }
+
+    .tf__single_slider_text h1 {
+        font-size: 33px;
+    }
+
+    .tf__single_slider_text h1 span {
+        font-size: 33px;
+    }
+
+    .tf__banner .slick-dots {
+        display: none !important;
+    }
+
+    .tf__single_slider_text p {
+        font-size: 16px;
+        margin-bottom: 33px;
+    }
+
+    .tf__single_slider_text ul li {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .tf__single_slider_text ul li span {
+        margin-left: 10px;
+    }
+
+    .tf__single_slider_text {
+        margin-top: 65px;
+        margin-bottom: 55px;
+        padding: 0px 10px;
+    }
+
+    /* banner end */
+
+    /* future service start */
+    .tf__section_heading h5 {
+        font-size: 18px;
+    }
+
+    .tf__section_heading h3 {
+        font-size: 25px;
+    }
+
+    .related_service_slider .nextArrow,
+    .related_service_slider .prevArrow,
+    .testi_slider .nextArrow,
+    .testi_slider .prevArrow,
+    .futured_slider .nextArrow,
+    .futured_slider .prevArrow {
+        top: -122px;
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+        font-size: 14px;
+    }
+
+    .related_service_slider .prevArrow,
+    .testi_slider .prevArrow,
+    .futured_slider .prevArrow {
+        right: 50px;
+    }
+
+    .tf__featured_service_single h3,
+    .tf__contact_info h3 {
+        font-size: 20px;
+    }
+
+    .tf__featured_service_single span,
+    .tf__contact_info span {
+        width: 76px;
+        height: 86px;
+        line-height: 86px;
+        font-size: 35px;
+    }
+
+    .tf__featured_service_single,
+    .tf__contact_info {
+        padding-top: 80px;
+    }
+
+    /* future service end */
+
+    /* about start */
+    .tf__about_text {
+        padding-right: 0;
+        margin-bottom: 25px;
+    }
+
+    .tf_about_text_center_user_text {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .tf_about_text_center_user_call p {
+        width: 75%;
+        font-size: 15px;
+    }
+
+    .tf_about_text_center_user_call p a {
+        font-size: 14px;
+    }
+
+    .tf__about_img {
+        margin: 0;
+        width: 290px;
+        height: 290px;
+        float: left;
+        margin-bottom: 40px;
+    }
+
+    .tf__about_img .large_img_2,
+    .tf__about_img .large_img_3 {
+        width: 115px !important;
+        height: 115px !important;
+        bottom: -40px;
+    }
+
+    .tf__about_img .venobox,
+    .tf__why_choose_img .venobox {
+        top: 20px;
+        left: auto;
+        right: 20px;
+        transform: none;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .tf__about_img .venobox::after,
+    .tf__why_choose_img .venobox::after {
+        width: 60px;
+        height: 60px;
+        border: 3px solid var(--colorPrimary);
+        top: -5px;
+        left: -5px;
+    }
+
+    .tf__about_img::after {
+        top: 15px;
+        right: -15px;
+    }
+
+    /* about end */
+
+    /* category start */
+    .tf__single_categories h4 {
+        font-size: 20px;
+    }
+
+    /* category end */
+
+    /* service start */
+    .tf__services_item {
+        padding: 0;
+    }
+
+    .tf__services_img {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 10px;
+    }
+
+    .tf__services_text {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .read_btn {
+        padding: 8px 20px;
+        font-size: 15px;
+    }
+
+    .tf__blog_2 .common_btn,
+    .tf__testimonial_2 .common_btn,
+    .tf__team_2 .common_btn,
+    .tf__services_2 .common_btn,
+    .tf__services .common_btn,
+    .tf__team .common_btn,
+    .tf__blog .common_btn {
+        position: static;
+        margin-top: 25px;
+    }
+
+    /* service end */
+
+    /* why choose start */
+    .tf__why_choose_text ul li {
+        width: 100%;
+    }
+
+    .tf__why_choose_text {
+        margin-bottom: 25px;
+    }
+
+    .tf__why_choose_img .large_img {
+        width: 260px;
+        height: 270px;
+    }
+
+    .tf__why_choose_img .small_img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .tf__why_choose_img .small_img::after {
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .tf__work_text_area {
+        padding-bottom: 35px;
+    }
+
+    /* why choose end */
+
+    /* work start */
+    .tf__work_text_area::after {
+        display: none;
+    }
+
+    .tf__work_single.first {
+        margin-left: 0;
+    }
+
+    .tf__work_single {
+        border: 15px solid var(--colorBlack);
+        width: 270px;
+        height: 270px;
+        margin: 25px auto 0 auto !important;
+    }
+
+    /* work end */
+
+    /* gallery start */
+    .tf__gallery_filter {
+        text-align: center;
+    }
+
+    .tf__gallery_filter button {
+        font-size: 13px;
+        padding: 5px 13px;
+        margin: 5px 5px 0px 5px;
+    }
+
+    .tf__gallery_item {
+        height: 300px;
+    }
+
+    .tf__gallery_item .gal_img_overlay {
+        width: 90%;
+        padding: 40px 0px 10px 10px;
+    }
+
+    .tf__gallery_item .gal_img_overlay h4 {
+        font-size: 18px;
+    }
+
+    .tf__gallery_item:hover span {
+        left: 83%;
+    }
+
+    .tf__gallery_item .venobox span {
+        bottom: 35px;
+    }
+
+    .vbox-content {
+        max-width: 320px;
+        max-height: 280px;
+    }
+
+    /* gallery end */
+
+    /* counter start */
+    .tf__single_counter p {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    /* counter end */
+
+    /* team start */
+    .tf__single_team_img {
+        height: 300px;
+    }
+
+    .tf__single_team_text .title {
+        font-size: 18px;
+    }
+
+    /* team end */
+
+    /* testimonial start */
+    .testi_slider .nextArrow,
+    .testi_slider .prevArrow {
+        top: -102px;
+    }
+
+    .tf__single_testimonial_text .title {
+        font-size: 20px;
+    }
+
+    /* testimonial end */
+
+    /* blog start */
+    .tf__single_blog_img {
+        width: 100%;
+        height: 220px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .tf__single_blog_text {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .tf__single_blog_text ul li {
+        margin-bottom: 5px;
+    }
+
+    .tf__single_blog_text .title {
+        font-size: 19px;
+    }
+
+    .tf__featured_blog_img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .tf__featured_blog_text {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .tf__featured_blog_text .title {
+        font-size: 19px;
+    }
+
+    /* blog end */
+
+    /* footer start */
+    .tf__footer_subscribe {
+        padding: 15px;
+        border-radius: 10px;
+        top: -60px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    .tf__footer_subscribe_text h4 {
+        font-size: 19px;
+        text-align: center;
+    }
+
+    .tf__footer_subscribe_text p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-align: center;
+        margin: 10px 0px 15px 0px;
+    }
+
+    .tf__footer_subscribe_form button {
+        padding: 7px 20px;
+    }
+
+    .tf__footer_subscribe_form input {
+        padding: 12px 20px;
+    }
+
+    .tf__footer_logo_area .footer_logo {
+        max-width: 150px;
+    }
+
+    .tf__footer_logo_area p {
+        margin: 15px 0px;
+    }
+
+    .tf__footer_logo_area {
+        margin-bottom: 40px;
+    }
+
+    .tf__footer_link h4 {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .tf__footer_link {
+        margin-bottom: 40px;
+    }
+
+    .tf__footer_link p {
+        margin-top: 15px;
+    }
+
+    /* footer end */
+    /*================================
+        HOME PAGE END
+    ================================*/
+
+    /*================================
+        404 PAGE START
+    ================================*/
+    .tf___404 {
+        padding-top: 74px;
+    }
+
+    .tf___404_text .img {
+        width: 300px;
+        height: 160px;
+        margin: 0 auto;
+    }
+
+    .tf___404_text h4 {
+        font-size: 25px;
+    }
+
+    /*================================
+        404 PAGE END
+    ================================*/
+
+    /*================================
+        ABOUT PAGE START
+    ================================*/
+    .tf__breadcrumb {
+        margin-top: 124px;
+    }
+
+    .tf__breadcrumb_text h1 {
+        font-size: 30px;
+    }
+
+    .tf__breadcrumb_text ul li a {
+        font-size: 13px;
+    }
+
+    .tf__breadcrumb_overlay {
+        padding: 75px 0px 72px 0px;
+    }
+
+    .tf__about_page_welcome_img {
+        height: 370px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 20px;
+        width: 300px;
+    }
+
+    .tf__about_page_welcome_img .call_area {
+        padding: 15px;
+        top: auto;
+        bottom: 20px;
+        transform: translate(0);
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+    }
+
+    .tf__about_page_welcome_img .call p {
+        font-size: 14px;
+        width: 76%;
+    }
+
+    .tf__about_page_welcome_img .call p span {
+        display: inline-block;
+        font-weight: 600;
+    }
+
+    .tf__about_page_welcome_img .call_area h4 {
+        font-size: 14px;
+    }
+
+    .tf__about_page_welcome_img .call_area h4 span {
+        font-size: 13px;
+    }
+
+    .tf__about_page_welcome_text h2,
+    .tf__about_page_welcome_text h3,
+    .tf__about_page_welcome_text h4,
+    .tf__about_page_welcome_text h5 {
+        font-size: 25px;
+    }
+
+    .tf_about_2_text ul li,
+    .tf_about_2_text ol li,
+    .tf__about_page_welcome_text ul li,
+    .tf__about_page_welcome_text ol li,
+    .tf__services_details_text ul li,
+    .tf__services_details_text ol li {
+        width: 100%;
+    }
+
+    .tf__about_page_about_img .img_1 {
+        width: auto;
+        height: 300px;
+        margin-bottom: 35px;
+    }
+
+    .tf__about_page_about_img .img_2 {
+        width: 200px;
+        height: 140px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .tf__about_page_about_img p {
+        font-size: 30px;
+        bottom: -10px;
+        right: auto;
+        left: 0;
+    }
+
+    .tf__about_page_about_img p span {
+        font-size: 15px;
+    }
+
+    .tf__about_page_about_text a {
+        margin-top: 20px;
+    }
+
+    .tf__mission_text h3 {
+        font-size: 25px;
+    }
+
+    .tf__mission_video_area {
+        height: 230px;
+        margin-bottom: 110px;
+    }
+
+    .tf__mission_video {
+        padding: 10px;
+        bottom: -130px;
+        height: 210px;
+    }
+
+    .tf__vission_img_large {
+        height: 170px;
+        margin-top: 25px;
+    }
+
+    .tf_partnership h2 {
+        font-size: 25px;
+    }
+
+    .tf_partner_single {
+        height: 250px;
+    }
+
+    .tf_partner_overlay h3 {
+        font-size: 20px;
+    }
+
+    .tf__award_img {
+        padding: 10px;
+        margin-right: 0;
+        height: 300px;
+    }
+
+    .tf__award_img .award_small_img {
+        width: 220px;
+        height: 150px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .tf__award_text h4 {
+        font-size: 25px;
+        margin-top: 25px;
+    }
+
+    .tf__award_text ul li,
+    .tf__award_text ol li {
+        width: 100%;
+    }
+
+    /*================================
+        ABOUT PAGE END
+    ================================*/
+
+    /*================================
+        BLOG DETAILS START
+    ================================*/
+    .tf__blog_details_img {
+        height: 250px;
+    }
+
+    .tf__blog_details_text h1,
+    .tf__blog_details_text h2 {
+        font-size: 25px;
+    }
+
+    .tf__blog_details_text .quot_text {
+        padding: 80px 20px 20px 20px;
+    }
+
+    .tf__blog_details_text .quot_text p {
+        font-size: 16px;
+    }
+
+    .tf__blog_details_text .quot_text h4 {
+        font-size: 16px;
+    }
+
+    .tf__blog_details_text h4 {
+        font-size: 20px;
+    }
+
+    .tf__blog_det_center_img {
+        height: 250px;
+    }
+
+    .tf__blog_det_video_img {
+        width: 320px;
+        height: 335px;
+    }
+
+    .tf_service_det_tag .tag_list li:first-child,
+    .tf_service_det_tag .share li:first-child {
+        width: 100%;
+    }
+
+    .tf_service_det_tag .tag_list {
+        margin-bottom: 30px;
+    }
+
+    .tf_service_det_tag .tag_list li a,
+    .tf_service_det_tag .share li a {
+        margin-left: 0;
+        margin-right: 15px;
+        margin-top: 10px;
+
+    }
+
+    .tf_service_det_btn_area ul li {
+        width: 100%;
+    }
+
+    .tf_service_det_btn_area ul li .text {
+        max-width: 180px;
+    }
+
+    .tf__bloger_area {
+        padding: 20px;
+    }
+
+    .tf__bloger_area h3 {
+        font-size: 20px;
+    }
+
+    .tf__service_review_list h3,
+    .tf__service_review_input h3 {
+        font-size: 25px;
+    }
+
+    .tf__single_review .review_text {
+        width: 100% !important;
+        margin-top: 10px;
+    }
+
+    .tf__single_review .review_text h4 {
+        font-size: 18px;
+    }
+
+    .tf__single_review.reply {
+        padding-left: 20px;
+    }
+
+    .tf__service_review_input .form-check label {
+        max-width: 95%;
+    }
+
+    .sidebar_item h3 {
+        font-size: 20px;
+    }
+
+    .tf__sidebar_blog ul li a .img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .tf__sidebar_blog ul li a .text {
+        width: 68%;
+    }
+
+    .tf__sidebar_blog ul li a .text span {
+        font-size: 14px;
+    }
+
+    .tf__sidebar_mail h5 {
+        font-size: 16px;
+        margin: 15px 20px;
+    }
+
+    .sidebar_item {
+        padding: 15px;
+    }
+
+    .tf__blog_details_text .header_info li {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    /*================================
+        BLOG DETAILS END
+    ================================*/
+
+    /*================================
+        COMMING SOON START
+    ================================*/
+    .tf__comming_soon_text h3 {
+        font-size: 25px;
+    }
+
+    .tf__comming_soon_text .simply-amount {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        font-size: 25px;
+        margin: 0px 3px;
+    }
+
+    .tf__comming_soon_text .simply-word {
+        font-size: 14px;
+    }
+
+    .tf__comming_form_area .overlay {
+        padding: 20px;
+    }
+
+    .tf__comming_form_area h4 {
+        font-size: 20px;
+    }
+
+    .tf__comming_form_area form button {
+        padding: 0px 20px;
+    }
+
+    /*================================
+        COMMING SOON END
+    ================================*/
+
+    /*================================
+        CONTACT PAGE START
+    ================================*/
+    .tf__contact_map {
+        height: 350px;
+    }
+
+    .tf__contact_form h2 {
+        font-size: 20px;
+    }
+
+    /*================================
+        CONTACT PAGE END
+    ================================*/
+
+    /*================================
+        DASHBOARD PAGE START
+    ================================*/
+    .tf__dashboard_sidebar h3 {
+        font-size: 18px;
+    }
+
+    .tf__dashboard_sidebar {
+        padding: 15px;
+    }
+
+    .tf_dashboard_content {
+        margin-top: 25px;
+    }
+
+    .tf_dashboard_content h2 {
+        font-size: 23px;
+    }
+
+    .tf_personal_info,
+    .tf_personal_info_edit {
+        padding: 15px;
+    }
+
+    .tf_personal_info h4,
+    .tf_personal_info_edit h4 {
+        font-size: 16px;
+    }
+
+    .tf_personal_info h4 a,
+    .tf_personal_info_edit h4 a {
+        font-size: 13px;
+    }
+
+    .tf_personal_info_address li span {
+        width: 100%;
+        font-weight: 600;
+    }
+
+    .tf_personal_info_link li:first-child {
+        font-size: 20px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .tf_personal_info_link li a {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    /*================================
+        DASHBOARD PAGE END
+    ================================*/
+
+    /*================================
+        FAQ PAGE START
+    ================================*/
+    .tf__faq_img .img_1 {
+        width: 290px;
+        height: 330px;
+    }
+
+    .tf__faq_img .img_2 {
+        width: 180px;
+        height: 195px;
+        right: auto;
+        left: 150px;
+    }
+
+    .tf__faq_text h2 {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    .accordion-button {
+        font-size: 16px;
+    }
+
+    /*================================
+        FAQ PAGE END
+    ================================*/
+
+    /*================================
+        LOGIN PAGE START
+    ================================*/
+    .tf__login_area {
+        padding: 20px;
+    }
+
+    .tf__login_area h3 {
+        font-size: 25px;
+    }
+
+    .tf__login_area h5 {
+        font-size: 16px;
+    }
+
+    /*================================
+        LOGIN PAGE END
+    ================================*/
+
+    /*================================
+        PROCING PAGE START
+    ================================*/
+    .tf__single_pricing_header .text h3 {
+        font-size: 23px;
+    }
+
+    .tf__pricing_list::after {
+        width: 220px;
+        clip-path: polygon(0 20%, 50% 0, 100% 20%, 100% 43%, 50% 100%, 0 43%);
+    }
+
+    .tf__single_pricing_header .text h5 {
+        font-size: 18px;
+    }
+
+    .tf__single_pricing_header .text h4 {
+        font-size: 20px;
+    }
+
+    .tf___pricing_support h3 {
+        font-size: 30px;
+    }
+
+    .tf___pricing_support h4 {
+        font-size: 20px;
+    }
+
+    /*================================
+        PROCING PAGE END
+    ================================*/
+
+    /*================================
+        PRIVACY POLICY START
+    ================================*/
+    .tf__terms_condition_text h3 {
+        font-size: 25px;
+    }
+
+    /*================================
+        PRIVACY POLICY END
+    ================================*/
+
+    /*================================
+        SERVICE DETAILS START
+    ================================*/
+    .tf__services_details_img {
+        height: 250px;
+        margin-bottom: 30px;
+    }
+
+    .tf__services_details_img a {
+        font-size: 14px;
+    }
+
+    .tf__services_details_text h2 {
+        font-size: 25px;
+    }
+
+    .tf__services_details_text h3 {
+        font-size: 20px;
+    }
+
+    .tf__services_det_video {
+        height: 250px;
+    }
+
+    .tf__service_review_input {
+        margin-bottom: 25px;
+    }
+
+    /*================================
+        SERVICE DETAILS END
+    ================================*/
+
+    /*================================
+        TEAM DETAILS START
+    ================================*/
+    .tf__team_sidebar {
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+
+    .tf__team_sidebar .img {
+        height: 270px;
+    }
+
+    .tf__team_sidebar .title {
+        font-size: 20px;
+    }
+
+    .tf__team_sidebar_details li h5 {
+        font-size: 16px;
+    }
+
+    .tf__team_sidebar_details li p {
+        font-size: 14px;
+    }
+
+    .tf__team_details_text h3 {
+        font-size: 20px;
+    }
+
+    .tf__team_Statictics h2::after {
+        width: 73px;
+    }
+
+    .tf__team_Statictics_counter {
+        margin-bottom: 25px;
+    }
+
+    .tf__team_Statictics_counter.lasi_child {
+        margin-bottom: 5px;
+    }
+
+    .tf__team_skills_img {
+        height: 230px;
+        width: 250px;
+        margin-top: 10px;
+    }
+
+    .tf__team_skills_img::after {
+        width: 100%;
+        height: 100%;
+        bottom: -13px;
+        right: -13px;
+    }
+
+    .tf__team_qualification_single {
+        padding: 15px;
+    }
+
+    .tf__team_qualification_single h4 {
+        font-size: 18px;
+    }
+
+    .tf__team_details_text .tf__service_review_input {
+        margin-bottom: 0;
+    }
+
+    /*================================
+        TEAM DETAILS END
+    ================================*/
+
+    /*================================
+        HOME PAGE 2 START
+    ================================*/
+    .main_menu_2 .navbar-nav .nav-item .nav-link {
+        color: var(--colorBlack);
+    }
+
+    .wsus__banner_2 {
+        height: auto;
+        padding: 60px 0px 70px 0px;
+    }
+
+    .wsus__banner_2_text h1 {
+        font-size: 35px;
+    }
+
+    .wsus__banner_2 div {
+        height: auto;
+    }
+
+    .wsus__banner_2_text form ul li {
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1px solid #ffcbcb;
+    }
+
+    .wsus__banner_2_text form ul {
+        border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+    }
+
+    .wsus__banner_2_text form ul li button {
+        border-radius: 10px;
+        margin: 15px 0px 5px 0px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    .wsus__banner_2_text form ul li:last-child {
+        padding-left: 0;
+    }
+
+    .tf__section_heading_2 h3 {
+        font-size: 22px;
+    }
+
+    .tf__future_service_single_2_header h3 {
+        font-size: 20px;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .tf_about_2_img .img_1 {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    .tf_about_2_img .img_2 {
+        width: 200px;
+        height: 160px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .tf_about_2_img::after {
+        display: none;
+    }
+
+    .tf_about_2_img p {
+        font-size: 30px;
+        padding: 15px;
+        bottom: -10px;
+        right: auto;
+        left: 10px;
+    }
+
+    .tf_about_2_img p span {
+        font-size: 16px;
+    }
+
+    .tf__why_choose_2_text {
+        margin-bottom: 25px;
+    }
+
+    .tf__why_choose_2_img .img_1 {
+        height: 240px;
+        width: 280px;
+        float: right;
+    }
+
+    .tf__single_counter_2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .tf__why_choose_2_img .img_1 span::after {
+        width: 140px;
+    }
+
+    .tf__why_choose_2_img .img_1 span::before {
+        border-top: 35px solid #d98b7b;
+        border-right: 19px solid transparent;
+        top: -39px;
+        left: -89px;
+    }
+
+    .tf__why_choose_2_img .img_2 {
+        height: 200px;
+    }
+
+    .tf__gallery_filter_2 button {
+        font-size: 13px;
+        padding: 5px 10px;
+        margin: 2px;
+    }
+
+    .tf__gallery_item_2 .gal_img_overlay {
+        padding: 15px !important;
+    }
+
+    .tf__gallery_item_2 .venobox span {
+        bottom: 45px !important;
+    }
+
+    .tf__work_single_2 p {
+        width: 220px;
+        height: 220px;
+        padding: 30px;
+    }
+
+    .tf__work_single_2 p span {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        border: 7px solid var(--colorWhite);
+        font-size: 30px;
+    }
+
+    .tf__work_single_2 p::after {
+        display: none;
+    }
+
+    .tf__work_single_2 h4 {
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+
+    .tf__single_team_2_img {
+        height: 280px;
+    }
+
+    .tf__single_team_2_text h3 {
+        font-size: 20px;
+    }
+
+    .tf__single_team_2_text p {
+        font-size: 16px
+    }
+
+    .tf__single_blog_2 {
+        padding: 10px;
+    }
+
+    .tf__single_blog_2_text .bloger_info {
+        width: 100%;
+    }
+
+    .tf__footer_download ul li a p {
+        margin-top: 0;
+    }
+
+    .home_2 .main_menu .navbar-nav {
+        margin-top: 10px !important;
+    }
+
+    /*================================
+        HOME PAGE 2 END
+    ================================*/
+}
