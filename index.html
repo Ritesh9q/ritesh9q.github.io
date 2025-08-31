@@ -1,154 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ritesh — Full‑Stack Developer (Vue + PHP)</title>
+  <meta name="description" content="Portfolio of Ritesh — Full‑Stack Developer specializing in Vue, Laravel/PHP, and AI integrations." />
+  <link href="https://cdn.jsdelivr.net/npm/tabler@1.0.0-alpha.8/dist/css/tabler.min.css" rel="stylesheet">
+  <style>
+    body {font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+    .hero-bg{background:linear-gradient(135deg,#f8fafc 0%, #eef2ff 100%)}
+    .card-hover{transition:transform .18s ease, box-shadow .18s ease}
+    .card-hover:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(2,6,23,.08)}
+  </style>
+</head>
+<body class="bg-white">
+  <header class="navbar navbar-expand-md navbar-light bg-transparent">
+    <div class="container-xl">
+      <a class="navbar-brand" href="#">Ritesh Kurve</a>
+      <div class="navbar-nav ms-auto d-none d-md-flex">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
 
-<!DOCTYPE html>
-<html>
-<title>Ritesh Kurve</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-a{
-  text-decoration:none;
-}
-</style>
-<body class="w3-light-grey">
-
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="img/ritesh.jpeg" style="width:100%" alt="Ritesh Kurve">
-          <div class="w3-display-bottomleft w3-container w3-text-white">
-            <h2>Ritesh Kurve</h2>
-          </div>
-        </div> 
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Web Developer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Maharashtra, India </p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>riteshkurve9q@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+91 9075231398</p>
-          <hr>
-
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-
-          <p>VueJS, PHP, SQL, JavaScript, ReactJS, Bootstrap CSS, Materialize CSS,</p>
-          <!-- <p>Adobe Photoshop</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-          </div>
-          <p>Photography</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
+  <div class="page">
+    <div class="container-xl">
+      <div class="py-6">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <h1 class="display-4 mb-3">Full‑Stack Developer — <span class="text-primary">Vue</span> + <span class="text-primary">Laravel/PHP</span></h1>
+            <p class="lead text-muted">I build reliable web apps, integrate AI features, and help teams ship faster. Keen on performance, DX, and clean architecture.</p>
+            <div class="mt-4">
+              <a href="#projects" class="btn btn-primary me-2">See work</a>
+              <a href="/resume.pdf" class="btn btn-outline-secondary me-2">Download resume</a>
+              <a href="https://github.com/ritesh9q" target="_blank" class="btn btn-outline-secondary">GitHub</a>
             </div>
           </div>
-          <p>Illustrator</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+          <div class="col-lg-5 text-center">
+            <div class="card card-lg">
+              <div class="card-body">
+                <div style="width:180px;height:180px;border-radius:14px;background:linear-gradient(180deg,#f8fafc,#e9efff);display:inline-flex;align-items:center;justify-content:center;color:#64748b">
+                  <img src="img/ritesh.jpg" alt="">
+                </div>
+              </div>
+            </div>
           </div>
-          <p>Media</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-          </div> -->
-          <br>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>English</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:85%"></div>
-          </div>
-          <p>Hindi</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:90%"></div>
-          </div>
-          <p>Marathi</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:90%"></div>
-          </div>
-          <br>
-        </div>
-      </div><br>
-
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer /<a target="_blank" href="https://wagonslearning.com"> Wagons Learning Pvt. Ltd.</a></b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2021 - June 2023 <!-- <span class="w3-tag w3-teal w3-round">Current</span> --> </h6>
-          <p>
-            Developed responsive websites, web apps for managing online courses. Worked on e-Learning game module in PhaserJs. Revamped  angular web apps to react js and also worked on website optimization and made them SEO ready.
-          </p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Start-Up / <a target="_blank" href="https://potoba.net">Potoba - Food Delivery Service</a></b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2020 - Nov 2021</h6>
-          <p>
-            Built a micro food delivery start-up during covid pandemic for delivering food and scaled it to few nearby cities. Aquired more than 5K active users.
-          </p>
-          <hr>
-        </div>
-        <!-- <div class="w3-container">
-          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
-        </div> -->
-      </div>
-
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <!-- <div class="w3-container">
-          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-          <p>Web Development! All I need to know in one place</p>
-          <hr>
-        </div> -->
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Government College of Engineering, Chandrapur</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2021</h6>
-          <p>Bachelor's Degree In Computer Science & Engineering</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Government Polytechnic Gadchiroli</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2018</h6>
-          <p>Diploma In Computer Engineering</p><br>
         </div>
       </div>
 
-    <!-- End Right Column -->
+      <section id="about" class="my-5">
+        <div class="card card-sm">
+          <div class="card-body">
+            <h3 class="card-title">About</h3>
+            <p class="text-muted">Full‑stack engineer with experience across Vue 3, Pinia, Laravel 12, PHP, and Android. Recently built a Laravel→Redis→Kibana logging plugin, a micro PHP framework, and integrated SLMs (Gemini, Qwen) into prototypes. Reading <em>AI Engineering</em> by Chip Huyen and following Andrej Karpathy to translate AI concepts into production.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="my-5">
+        <h3>Skills</h3>
+        <div class="row g-3 mt-2">
+          <div class="col-md-4">
+            <div class="card card-sm card-hover">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <div class="text-muted">Frontend</div>
+                    <div class="fw-semibold">Vue 3, Pinia, Vite, Tailwind</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card card-sm card-hover">
+              <div class="card-body">
+                <div class="text-muted">Backend</div>
+                <div class="fw-semibold">Laravel 12, PHP, REST, Redis, MySQL</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card card-sm card-hover">
+              <div class="card-body">
+                <div class="text-muted">AI & Data</div>
+                <div class="fw-semibold">SLMs (Gemini, Qwen), Kibana, GA</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="my-5">
+        <div class="d-flex justify-content-between align-items-end">
+          <h3>Projects</h3>
+          <div>
+            <select id="filter" class="form-select form-select-sm">
+              <option value="all">All</option>
+              <option value="backend">Backend</option>
+              <option value="frontend">Frontend</option>
+              <option value="ai">AI</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row row-deck mt-3" id="projectGrid">
+          <div class="col-md-4" data-tags="backend">
+            <div class="card card-sm card-hover">
+              <div class="card-body">
+                <h4 class="card-title">Laravel → Kibana Logger Plugin</h4>
+                <p class="text-muted mb-2">Structured logging via Redis with Kibana dashboards for real‑time monitoring.</p>
+                <!-- <a href="#" class="link-muted">Code</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-tags="backend">
+            <div class="card card-sm card-hover">
+              <div class="card-body">
+                <h4 class="card-title">Micro PHP Framework</h4>
+                <p class="text-muted mb-2">Routing, controllers, DB layer, and logging for internal services.</p>
+                <!-- <a href="#" class="link-muted">Code</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-tags="frontend">
+            <div class="card card-sm card-hover">
+              <div class="card-body">
+                <h4 class="card-title">Backoffice CKEditor Enhancements</h4>
+                <p class="text-muted mb-2">AI grammar tools and custom widgets for editors.</p>
+                <!-- <a href="#" class="link-muted">Demo</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-tags="ai">
+            <div class="card card-sm card-hover">
+              <div class="card-body">
+                <h4 class="card-title">SLM Prototypes</h4>
+                <p class="text-muted mb-2">Gemini/Qwen experiments for content assist and insights.</p>
+                <!-- <a href="#" class="link-muted">Notes</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-tags="frontend">
+            <div class="card card-sm card-hover">
+              <div class="card-body">
+                <h4 class="card-title">Devi Android Integrations</h4>
+                <p class="text-muted mb-2">Yotpo reviews, offline handling, and single‑device login.</p>
+                <!-- <a href="#" class="link-muted">Case Study</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-tags="frontend">
+            <div class="card card-sm card-hover">
+              <div class="card-body">
+                <h4 class="card-title">GA eCommerce Events</h4>
+                <p class="text-muted mb-2">Implemented view_item, add_to_cart, begin_checkout to spec.</p>
+                <!-- <a href="#" class="link-muted">Snippet</a> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="experience" class="my-5">
+        <h3>Experience Highlights</h3>
+        <ul class="list-unstyled mt-3">
+          <li>Maintained and enhanced Backoffice app; improved stability and deployment readiness.</li>
+          <li>Resolved issues in legacy MyShop Core (Java) ensuring uptime and long‑term fixes.</li>
+          <li>Delivered custom client features: Devi mobile app, Href language component.</li>
+          <li>Fixed pricing accuracy using big.js; corrected shop reports and GA events.</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="my-5">
+        <div class="card card-sm">
+          <div class="card-body">
+            <h3>Contact</h3>
+            <p class="text-muted">Open to full‑stack roles, contract work, and integrations. Email me at <a href="mailto:riteshkurve9q@gmail.com">riteshkurve9q@gmail.com</a></p>
+            <div class="mt-3">
+              <a class="btn btn-outline-primary me-2" href="https://github.com/ritesh9q" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="py-6 text-muted text-center">© <span id="year"></span> Ritesh — Built with Tabler — Hosted on GitHub Pages</footer>
     </div>
-    
-  <!-- End Grid -->
   </div>
-  
-  <!-- End Page Container -->
-</div>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <!-- <p>Find me on social media.</p>
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
-</footer>
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
 
+    // Filter
+    const select = document.getElementById('filter');
+    const cards = [...document.querySelectorAll('#projectGrid [data-tags]')];
+    select.addEventListener('change', () => {
+      const v = select.value;
+      cards.forEach(c => {
+        const tags = c.getAttribute('data-tags').split(',');
+        c.style.display = (v === 'all' || tags.includes(v)) ? '' : 'none';
+      });
+    });
+  </script>
 </body>
 </html>
